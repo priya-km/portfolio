@@ -41,6 +41,7 @@ h3 {
 
 a {
 	color:  var(--text-color);
+	text-decoration:none;
 }
 
 a:hover, a:focus {
