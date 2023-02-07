@@ -5,8 +5,13 @@
 
 ## Hello world!👋
 <p align="center"> My name is Priya Maharban and I'm a web developer from New York. This my current portfolio consisting of the projects/apps that I have developed!</p>
-
+<h4>Please note that this portfolio is still currently being built!</h4>
 <br>
+<h5>Future tasks include:</h5>
+<br>
+- Adding two recently finished projects to the projects page.
+- Editing home page "Check out some of my code!" button link.
+- Making it more mobile user friendly
     
 ## Links 🔗
 [Live Portfolio](https://priya-km.github.io/portfolio "Live View")
