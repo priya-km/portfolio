@@ -9,7 +9,7 @@
 <br>
     
 ## Links 🔗
-[Live Portfolio](https://priya-km.github.io/portfolio-website/ "Live View")
+[Live Portfolio](https://priya-km.github.io/portfolio "Live View")
  <br><br>
 [My Repositories](https://github.com/priya-km?tab=repositories "My Repositories")
  <br><br>
