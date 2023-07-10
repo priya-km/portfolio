@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html>
-
- <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title> Contact Priya Maharban </title>
-    <link rel="shortcut icon" href="./img/favicon-32x32.png">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-   
- </head>
- <body>
-  <header class="page-header">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priya Maharban - Portfolio</title>
+  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <style>
+    /* Custom CSS styles */
+    .navbar-nav .nav-link {
+      color: white;
+    }
     
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: black;
+      
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
     <img src="img/logo.png" width="200" height="70" alt="Priya M. text logo with bold white text" class="page-header__item">
-   
-    <div class="page-header">
-     <nav class="main-navigation page-header__item">
-       <ul role="menubar" class="navigation-list">
-           <li role="presentation">
-             <a href="index.html" role="menuitem" class="navigation-list__item">HOME</a>
-           </li>
-           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
+    <nav class="navbar navbar-expand-lg navbar-light main-navigation page-header__item">
+      <div class="container">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
           </li>
-           <li role="presentation">
-             <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT</a>
-           </li>
-          <li role="presentation">
-             <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">CONTACT</a>
-           </li>
-       </ul>
-     </nav>
-   </div>
+          <li class="nav-item">
+            <a class="nav-link" href="work.html">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
 
  	<div>
     <div class="center-align">
     	<h1>Contact Me</h1>
-          <a href="mailto:office@careerfoundry.com">Send Me an Email</a>
+      <br>
+          <h2><a href="mailto:priyamaharban@gmail.com">Click here to send me an Email</a></h2>
+          <br>
+          <h3>OR Fill out the form below</h3>
     </div>
 
       <div>
@@ -48,7 +59,7 @@
           <label class="standard-label" for="contact-email">*Email: </label>
           <input type="email" id="contact-email" required>
 
-          <label class="standard-label" for="contact-phone">Telephone: </label>
+          <label class="standard-label" for="contact-phone">Telephone: ###-###-#### </label>
           <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 
           <label class="standard-label" for="contact-message">*Message: </label>
@@ -64,8 +75,7 @@
           <div class="center-align">
     	  	Priya Maharban
     	  	<br>
-    	  	Phone: <a href="tel:+1 123-456-7890" aria-hidden="true">+1 123-456-7890</a><br>
-    	  	Email: <a href="mailto:office@careerfoundry.com">priyamaharban@gmail.com</a><br>
+    	  	Email: <a href="mailto:priyamaharban@gmail.com">priyamaharban@gmail.com</a><br>
         </div>
     	  </div>
     </div>
@@ -79,9 +89,12 @@
       <!-- Twitter Logo -->
       <img src="img/twitter_icon.svg" alt="Twitter">
       <!-- LinkedIn Logo -->
-      <img src="img/linkedin_icon.svg" alt="LinkedIn">
+        <a href="https://www.linkedin.com/in/priya-maharban-71b544272/" target="_blank">
+        <img src="img/linkedin_icon.svg" alt="LinkedIn">
+        </a>
     </div>
     </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
  </body>
 </html>
 

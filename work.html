@@ -1,114 +1,172 @@
 <!DOCTYPE html>
 <html>
-
- <head>
- 	<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- 	<title> Work - Priya Maharban </title>
-    <link rel="shortcut icon" href="./img/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-   
- </head>
- <body>
- 	<header class="page-header">
- 		
- 		<img src="img/logo.png" width="200" height="70" alt="Priya M. text logo with bold white text" class="page-header__item">
-   
-    <div class="page-header">
-     <nav class="main-navigation page-header__item">
-       <ul role="menubar" class="navigation-list">
-           <li role="presentation">
-             <a href="index.html" role="menuitem" class="navigation-list__item">HOME</a>
-           </li>
-           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">WORK</a>
+  <title>Priya Maharban - Portfolio</title>
+  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <style>
+    /* Custom CSS styles */
+    .navbar-nav .nav-link {
+      color: white;
+    }
+    
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: black;
+    }
+    
+    .navbar {
+      margin-bottom: 0;
+    }
+    
+    .grid-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      margin-top: 1400px;
+      margin-bottom: 500px;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    
+    .grid__item {
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .grid__item img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    
+    .grid__item:hover img {
+      transform: scale(1.05);
+    }
+    
+    .grid__item h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .grid__item p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    
+    .grid__item a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .grid__item a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+ <header class="page-header">
+    <img src="img/logo.png" width="200" height="70" alt="Priya M. text logo with bold white text" class="page-header__item">
+    <nav class="navbar navbar-expand-lg navbar-light main-navigation page-header__item">
+      <div class="container">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
           </li>
-           <li role="presentation">
-             <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT</a>
-           </li>
-          <li role="presentation">
-             <a href="contact.html" role="menuitem" class="navigation-list__item">CONTACT</a>
-           </li>
-       </ul>
-     </nav>
-   </div>
+          <li class="nav-item">
+            <a class="nav-link active" href="work.html">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-<!-- Main content -->
 
-  <section>
-    <div class="center-align">
-    <h1>Work</h1>
-  </div>
-    <div class="grid">
-      <!-- grid items here -->
+  <!-- Main content -->
 
-    <div class="grid__item">
-      <h2>Pokedex App</h2>
-      <p> This project is a Pokedex App that uses an external API to load data and display a list of Pokemon along with their information when clicked on. </p>
-      <a href="https://priya-km.github.io/pokedex-app/" target="blank"><b>Live Pokedex</b></a><br>
-      <a href="https://github.com/priya-km/pokedex-app" target="blank"><b>See project on GitHub</b></a>
+  <section class="content">
+     <h1 class="center">PROJECTS</h1>
+     <h3 class="center">Images Coming Soon...</h3>
+    <div class="profile text-container">
+      <div class="grid-container">
+        <div class="grid">
+          <!-- grid items here -->
+
+          <div class="grid__item">
+            <h2 class="title">Pokedex App</h2>
+            <img src="https://via.placeholder.com/300" alt="Pokedex App">
+            <p class="description">This project is a Pokedex App that uses an external API to load data and display a list of Pokemon along with their information when clicked on.</p>
+            <a href="https://priya-km.github.io/pokedex-app/" target="_blank" color="white">Live Pokedex</a><br>
+            <a href="https://github.com/priya-km/pokedex-app" target="_blank">See project on GitHub</a>
+          </div>
+
+          <div class="grid__item">
+            <h2 class="title">jQuery To Do List App</h2>
+            <img src="https://via.placeholder.com/300" alt="jQuery To Do List App">
+            <p class="description">This project is a to-do list app made with jQuery.</p>
+            <a href="https://priya-km.github.io/to-do-list-app/" target="_blank">Live To Do List App</a><br>
+            <a href="https://github.com/priya-km/to-do-list-app" target="_blank">See project on GitHub</a>
+          </div>
+
+          <div class="grid__item">
+            <h2 class="title">myFlix App</h2>
+            <img src="https://via.placeholder.com/300" alt="myFlix App">
+            <p class="description">The goal of this project is to provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.</p>
+            <a href="https://myflixpkm.netlify.app/" target="_blank">LIVE myFlix App</a><br>
+            <a href="https://github.com/priya-km/myFlix-client" target="_blank">myFlix App Repository</a><br>
+            <a href="https://github.com/priya-km/myflix-app" target="_blank">myFlix App - Server Side</a><br>
+          </div>
+
+          <div class="grid__item">
+            <h2 class="title">My Blog AND other digital works</h2>
+            <img src="https://via.placeholder.com/300" alt="My Blog">
+            <p class="description">If you're interested in seeing my other works in categories such as web or graphic design, photography, animation, etc., you'll find it here! You will also see my blog where I document not only my journey as a web developer but also through my life, things I encounter, things I learn, experiences, etc.</p>
+            <a href="https://priyakaajal.wordpress.com/" target="_blank">My Blog</a>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="grid__item">
-      <h2>jQuery To Do List App</h2>
-      <p> This project is a to do list app made with jQuery. </p>
-      <a href="https://priya-km.github.io/to-do-list-app/" target="blank"><b>Live To Do List App</b></a><br>
-      <a href="https://github.com/priya-km/to-do-list-app" target="blank"><b>See project on GitHub</b></a>
-    </div>
-
-    <div class="grid__item">
-      <h2>CURRENT PROJECT (APR 2023) - myFlix App</h2>
-      <p> The goal of this project is to provide users with access to
-      information about different movies, directors, and genres. Users will be able to sign up, update their personal
-      information, and create a list of their favorite movies. <br>
-      The server-side component/back end of this project has been built with the MERN stack with its database on MongoDB and the API being hosted on render, it is near completion. <br>
-      The front end is currently being built with React. <br> 
-      <b>See the links below for more information.</b> </p>
-      <a href="https://github.com/priya-km/myflix-app" target="blank"><b>myFlix App - Server Side</b></a><br>
-      <a href="https://github.com/priya-km/myFlix-client" target="blank"><b>myFlix Client - Front End (Still being built)</b></a>
-    </div>
-
-    <div class="grid__item">
-      <h2>My Blog AND other digital works</h2>
-      <p>If you're interested in seeing my other works in categories such as web or graphic design, photography, animation, etc. you'll find it here! You will also see my blog where I document not only my journey as a web developer, but also through my life, things I encounter, things I learn, experiences, etc.</p>
-      <a href="https://priyakaajal.wordpress.com/" target="blank"><b>My Blog</b></a>
-    </div>
-    
-<!--     <div class="grid__item">
-      <h2>JavaScript Game</h2>
-      <p>Here you can find a web game that I've created using javascript</p>
-      <a href="#">See JS Game</a>
-    </div>
-    
-    <div class="grid__item">
-      <h2>Portfolio Style Guide</h2>
-      <p>Here you can find the styleguide that I've used for my portfolio</p>
-      <a href="#">See Styleguide</a>
-    </div> -->
-  </div>
-
-
   </section>
 
-
- 
-  <footer class="page-footer">
-    	<p>Find me on</p>
+  <div class="footer-space">
+    <footer class="page-footer">
+      <p>Find me on</p>
       <div class="social-media">
-    	<!-- Github Logo -->
-      <a href="https://github.com/priya-km" target="_blank">
-        <img src="img/github_icon.svg" alt="Github">
-      </a>
-    	<!-- Twitter Logo -->
-    	<img src="img/twitter_icon.svg" alt="Twitter">
-    	<!-- LinkedIn Logo -->
-    	<img src="img/linkedin_icon.svg" alt="LinkedIn">
-    </div>
-  </footer>
- </body>
+        <!-- Github Logo -->
+        <a href="https://github.com/priya-km" target="_blank">
+          <img src="img/github_icon.svg" alt="Github">
+        </a>
+        <!-- Twitter Logo -->
+        <img src="img/twitter_icon.svg" alt="Twitter">
+        <!-- LinkedIn Logo -->
+         <a href="https://www.linkedin.com/in/priya-maharban-71b544272/" target="_blank">
+        <img src="img/linkedin_icon.svg" alt="LinkedIn">
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-
-
-
