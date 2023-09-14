@@ -16,9 +16,9 @@ Text Color: (off white): #f3f3f3
 
 
 body {
-	background-color: #e3b38d;
+	background-color: #ffffff;
 	font-family: 'Lato', sans-serif;
-	color: #f3f3f3;
+	color: #000;
 	font-weight:  400;
 	
 }
@@ -41,7 +41,7 @@ h3 {
 /* ------------LINKS------------ */
 
 a {
-	color:  #f3f3f3;
+	color:  #000;
 	text-decoration:none;
 }
 
@@ -76,6 +76,12 @@ a:active {
 .container {
 	padding-top: -10px;
 }
+
+.section {
+  overflow: hidden;
+}
+
+
 .button, button {
 	border:  none;
 	/* ^ overwrites browser defaults and resets border */
@@ -83,35 +89,51 @@ a:active {
 	font-family:  inherit;
 	/* ^ takes font from outer container (body of html) */
 
-	background-color: #f27113;
-	color:  white;
+	background-color: #ffffff;
+	color:  rgb(0, 0, 0);
+	border: #da99ff;
+	border-color: #da99ff;
+	border-style: dashed;
 	text-decoration:  none;
 
 	padding:  10px;
 	/* adds spacing to the button */
 	border-radius:  3px;
 
-	border-bottom:  2px solid rgba(0, 0, 0, 0.3);
+	/* border-bottom:  2px solid rgba(0, 0, 0, 0.3); */
 	-webkit-transition:  0.2s opacity;
 	-o-transition:  0.2s opacity;
 	transition:  0.2s opacity;
 }
+.button:hover {
+	    background-color: #d0a0ff;
+      border-color: #52266c;
+	  color:  #fff
+
+}
 
     .btn-primary {
-      background-color: #f27113;
-      border-color: #f27113;
+      background-color: #d0a0ff;
+      border-color: #422453;
+	  color:  #fff;
+	  border-style: dashed;
+	  font-weight: bolder;
     }
     
     .btn-primary:hover,
     .btn-primary:focus {
-      background-color: #f48143;
-      border-color: #f48143;
+      background-color: #ffffff;
+      border-color: #52266c;
+	  color:  rgb(0, 0, 0);
+	  border-style: dashed;
     }
 
 	   .btn-primary:active,
     .btn-primary.active {
-      background-color: #e35e00;
-      border-color: #e35e00;
+      background-color: #ffffff;
+      border-color: #532a6b;
+	  color:  rgb(0, 0, 0);
+	  border-style: dashed;
     }
 
 button:hover, button:focus, .button:hover,
@@ -124,8 +146,8 @@ button:hover, button:focus, .button:hover,
 	/* opacity of button = 80% */
 }
 .button__secondary {
-	background-color:  #e0b354;
-	color:  #2b2b2b;
+	background-color:  #da99ff;
+	color:  #000000;
 }
 
 
@@ -190,6 +212,13 @@ text-align: center;
 	border-radius:  50%;
 }
 
+.about_portrait {
+	float: center;
+	width: 250px;
+	margin-right:  40px;
+	border-radius:  50%;
+}
+
 .page-footer {
   clear: both;
   text-align: center;
@@ -228,6 +257,19 @@ color: white;
   clear: both;
 }
 
+  .dropdown-container {
+    display: flex; /* Display the dropdowns in a row */
+    gap: 10px; /* Add some space between the buttons */
+  }
+
+  .dropdown {
+    flex: 1; /* Distribute available space equally between the dropdowns */
+  }
+
+    .custom-dropup .dropdown-menu {
+    bottom: 100%;
+  }
+
 
 /* Arrows  */
 
@@ -237,8 +279,8 @@ color: white;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  /* background-color: rgba(0, 0, 0, 0); */
-  border-radius: 50%;
+  background-color: rgba(195, 195, 195, 0.607);
+ border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,7 +328,7 @@ color: white;
   }
 
 .grid__item {
-	background-color: #fb8b39;
+	background-color: #da99ff;
 	width: 350px;
 	min-height: auto;
 	margin: 0;
