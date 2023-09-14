@@ -196,6 +196,10 @@
       <div>
         <h2 class="center-align">PROJECTS</h2>
         <br>
+        <!-- Left Arrow -->
+<div class="slider-arrow slider-arrow-left">
+  <img src="img/left-arrow.png" alt="Left Arrow">
+</div>
         <div class="grid-container">
           <div class="grid">
             <!-- grid items here -->
@@ -242,6 +246,10 @@
           </div>
         </div>
       </div>
+      <!-- Right Arrow -->
+<div class="slider-arrow slider-arrow-right">
+  <img src="img/right-arrow.png" alt="Right Arrow">
+</div>
     </div>
     <div class="section" id="about">
       <!-- ABOUT ME -->
@@ -331,7 +339,27 @@
       fadeInTextElement.classList.add("fade-in");
     });
   </script>
+<script>document.addEventListener("DOMContentLoaded", function () {
+  const leftArrow = document.querySelector(".slider-arrow-left");
+  const rightArrow = document.querySelector(".slider-arrow-right");
+  const gridContainer = document.querySelector(".grid-container");
 
+  let scrollPosition = 0;
+  const scrollAmount = 350; // Adjust this value to control the scroll amount
+
+  leftArrow.addEventListener("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition -= scrollAmount;
+      gridContainer.scrollLeft = scrollPosition;
+    }
+  });
+
+  rightArrow.addEventListener("click", function () {
+    scrollPosition += scrollAmount;
+    gridContainer.scrollLeft = scrollPosition;
+  });
+});
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
   <script>
