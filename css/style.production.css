@@ -7,9 +7,10 @@
 
 /* Color Palette 
 
-Primary color (beige): #e3b38d
-Secondary color (orange): #f27113
-Text Color: (off white): #f3f3f3
+Primary color: Lilac Purple #da99ff
+Secondary color Dark Purple #52266c
+Text Color: Black or White
+Background color: White
 */
 
 @import 'https://fonts.googleapis.com/css?family=Raleway';
@@ -79,6 +80,7 @@ a:active {
 
 .description {
 	margin-top: 10px;
+	font-family: 'Oswald', sans-serif;
 }
 
 .center {
@@ -170,12 +172,28 @@ button:hover, button:focus, .button:hover,
 
 .navigation-list {
 	list-style-type: none;
+
 }
 
 .navigation-list li {
 	display: inline-block;
 	margin-left: 15px;
 }
+
+.navbar {
+  position: fixed;
+  top: 10;
+  width: 100%;
+  background-color: #da99ff; 
+  color: #fff; 
+  z-index: 100; 
+}
+
+.link {
+	margin-left: 100px;
+	margin-right: 150px;
+}
+
 
 
 * {
@@ -216,6 +234,100 @@ margin: 0 auto;
 text-align: center;
 }
 
+/* CONTACT SECTION */
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+			padding-top: 0;
+			
+        }
+
+        .left-side, .right-side {
+            flex: 1;
+            padding: 20px;
+            font-weight: bold;
+            height:250px
+			
+        }
+
+        .left-side {
+            background-color: rgb(241, 241, 241);
+            color: black;
+            font-family: 'Oswald', sans-serif; /* Apply Oswald font */
+        }
+
+        .right-side {
+            background-color: #da99ff;
+            color: white;
+            font-family: 'Oswald', sans-serif; /* Apply Oswald font */
+        }
+
+        .email-link {
+            text-decoration: none;
+            color: white;
+        }
+        .contact-title {
+            font-size: 50px;
+        }
+/* 
+#contact {
+  position: relative;
+  z-index: 1000;
+
+} */
+
+/* Languages Section */
+
+
+        .language-container {
+            max-width: 800px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .language-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+           /*  margin-right: 200px; */
+        }
+
+        .language-logo {
+            width: 70px;
+            height: 70px;
+            margin: 30px;
+            justify-content: center;
+        }
+
+		.language-title {
+			font-family: 'Oswald', sans-serif; /* Apply Oswald font */
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		.section-title {
+			font-family: 'Oswald', sans-serif; /* Apply Oswald font */
+			font-size: 30px;
+		}
+
+/* PICS */
+
+.center-image {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 
 .profile_portrait {
 	float: left;
@@ -230,6 +342,8 @@ text-align: center;
 	margin-right:  40px;
 	border-radius:  50%;
 }
+
+/* FOOTER */
 
 .page-footer {
   clear: both;
@@ -269,6 +383,8 @@ color: white;
   clear: both;
 }
 
+/* PROJECTS BUTTON */
+
   .dropdown-container {
     display: flex; /* Display the dropdowns in a row */
     gap: 10px; /* Add some space between the buttons */
@@ -283,7 +399,7 @@ color: white;
   }
 
 
-/* Arrows  */
+/* PROJECTS SCROLLING ARROWS  */
 
 .slider-arrow {
   position: absolute;
