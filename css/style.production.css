@@ -229,6 +229,39 @@ color: white;
 }
 
 
+/* Arrows  */
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  /* background-color: rgba(0, 0, 0, 0); */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slider-arrow-left {
+  left: 20px;
+	width: 32px;
+  height: 32px;
+}
+
+.slider-arrow-right {
+  right: 20px;
+  width: 32px ;
+  height: 32px;
+}
+
+.slider-arrow:hover img {
+  transform: scale(1.3); /* Adjust the scale factor for the desired size increase */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
 
 
 
