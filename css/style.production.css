@@ -61,6 +61,18 @@ a:active {
 }
 */
 
+/* TEXT ANIMATION */
+
+    .interactive-text {
+        font-family: Arial, sans-serif;
+        font-size: 36px;
+        display: inline-block;
+    }
+
+    .interactive-text span {
+        display: inline-block;
+        transition: all 0.2s ease; /* Add smooth transition */
+    }
 
 
 /* ------------BUTTON------------*/

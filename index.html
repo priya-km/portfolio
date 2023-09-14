@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRIYA-KM</title>
+  <title>Priya-KM Portfolio</title>
   <link rel="shortcut icon" href="./img/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -172,7 +172,17 @@
 <body>
   <header>
    <!--  TOP HEADER  -->
-    <h1><img src="img/priyakaajal.png" width="32" height="32"> PRIYA-KM</h1>
+    <h1><img src="img/priyakaajal.png" width="32" height="32"> 
+        <div class="interactive-text">
+        <span>P</span>
+        <span>R</span>
+        <span>I</span>
+        <span>Y</span>
+        <span>A</span>
+        <span>-</span>
+        <span>K</span>
+        <span>M</span>
+    </div></h1>
   </header>
   <!-- NAV -->
   <nav>
@@ -185,7 +195,6 @@
     <a href="#contact" class="link">CONTACT</a>
   </nav>
 
-  <!-- Add the structure for your sections here -->
   <div id="fullpage">
     <div class="section" id="home">
       <!-- HOME SECTION -->
@@ -199,8 +208,9 @@
         </div>
       </div>
     </div>
+
+     <!-- PROJECTS -->
     <div class="section" id="projects" style="padding-top: 0;">
-      <!-- PROJECTS -->
       <div>
         <h2 class="center-align">PROJECTS</h2>
         <br>
@@ -210,7 +220,9 @@
 </div>
         <div class="grid-container">
           <div class="grid">
+
             <!-- grid items here -->
+            <!-- 1 - MYFLIX -->
                      <div class="grid__item">
               <a href="https://myflixpkm.netlify.app/" target="_blank">
                 <img src="img/myflix.jpg" alt="myFlix App Image"></a>
@@ -242,7 +254,7 @@
 </div>
 
             </div>
-
+              <!-- 2 - POKEDEX -->
             <div class="grid__item">
               <a href="https://priya-km.github.io/pokedex-app/" target="_blank">
                 <img src="img/pokedex.jpg" alt="Pokedex App Image"></a>
@@ -251,6 +263,7 @@
               <a href="https://github.com/priya-km/pokedex-app" class="btn btn-primary fade-in"  target="_blank">Code</a>
             </div>
 
+            <!-- 3 - MEET -->
             <div class="grid__item">
               <a href="https://priya-km.github.io/meet/" target="_blank">
                 <img src="img/meet.jpg" alt="Meet App Image"></a>
@@ -261,6 +274,7 @@
               
             </div>
 
+            <!-- 4 - TO DO -->
             <div class="grid__item">
               <a href="https://priya-km.github.io/to-do-list-app/" target="_blank">
                 <img src="img/todo.jpg" alt="jQuery To Do List App Image"></a>
@@ -269,6 +283,7 @@
               <a href="https://github.com/priya-km/to-do-list-app" class="btn btn-primary fade-in" target="_blank">Code</a>
             </div>
 
+            <!-- 5 - BLOG -->
                  <div class="grid__item">
               <a href="https://priyakaajal.wordpress.com/" target="_blank">
                 <img src="img/blog.jpg" alt="My Blog Image"></a>
@@ -284,8 +299,9 @@
   <img src="img/right-arrow.png" alt="Right Arrow">
 </div>
     </div>
+
+     <!-- ABOUT ME -->
     <div class="section" id="about">
-      <!-- ABOUT ME -->
       <div class="container">
         <h2 class="center-align">ABOUT ME</h2>
         <br>
@@ -308,17 +324,26 @@
         <br>
       </div>
     </div>
+    <!-- LANGUAGES SECTION -->
+      <div class="section" id="technologies">
+      <div class="container">
+        <h2 class="center-align">LANGUAGES I SPEAK & MORE</h2>
+        <br>
+        <div>
+          <div class="center-align">
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
     <div class="section" id="contact">
-      <!-- CONTACT -->
       <div class="container">
         <h2 class="center-align contact">CONTACT ME</h2>
-        <br>
-      <!--   <div class="center-align">
-          <br>
-          <h2><a href="mailto:priyamaharban@gmail.com">Click here to send me an Email</a></h2>
-          <br>
-        </div> -->
-        
+        <br> 
         <div>
           <div class="center-align">
             <img src="img/contact.png" alt="contact image" width="550" height="300"><br>
@@ -330,6 +355,8 @@
       </div>
     </div>
   </div>
+
+  <!-- FOOTER - NEED TO EDIT -->
 
   <footer class="">
     <div class="container">
@@ -347,6 +374,7 @@
     </div>
   </footer>
 
+  <!-- HOME, HELLO WORLD TYPING ANIMATION -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const textElement = document.getElementById("typing-text");
@@ -365,6 +393,7 @@
     });
   </script>
 
+<!-- PROJECTS PG DROPDOWN MENU BUTTON -->
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     var dropdowns = document.querySelectorAll(".dropdown-toggle");
@@ -382,8 +411,34 @@
   });
 </script>
 
+<!-- LOGO TEXT ANIMATION -->
+<script>
+document.addEventListener('mousemove', (e) => {
+    const letters = document.querySelectorAll('.interactive-text span');
 
-  <script>
+    letters.forEach((letter) => {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        const letterX = letter.getBoundingClientRect().left + window.scrollX + letter.offsetWidth / 2;
+        const letterY = letter.getBoundingClientRect().top + window.scrollY + letter.offsetHeight / 2;
+
+        const deltaX = mouseX - letterX;
+        const deltaY = mouseY - letterY;
+        const angle = Math.atan2(deltaY, deltaX);
+        const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+
+        const maxDistance = 100; // Adjust this value to control the effect intensity
+        const maxRotation = 30; // Adjust this value to control the maximum rotation angle
+
+        const rotation = (distance / maxDistance) * maxRotation;
+
+        letter.style.transform = `rotate(${rotation * (Math.PI / 180)}rad)`;
+    });
+});
+</script>
+
+<!-- PROFILE PIC FADE ANIMATION -->
+<script>
     window.addEventListener("load", function () {
       const portraitElement = document.querySelector(".profile_portrait");
       portraitElement.classList.add("slide-in");
@@ -393,6 +448,8 @@
       fadeInTextElement.classList.add("fade-in");
     });
   </script>
+
+  <!-- PROJECTS PG ARROWS FOR SCROLLING -->
 <script>document.addEventListener("DOMContentLoaded", function () {
   const leftArrow = document.querySelector(".slider-arrow-left");
   const rightArrow = document.querySelector(".slider-arrow-right");
@@ -414,6 +471,8 @@
   });
 });
 </script>
+
+<!-- NAVIGATION, ETC. -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
   <script>
