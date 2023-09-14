@@ -7,18 +7,19 @@
 
 /* Color Palette 
 
-Primary color (beige): #e3b38d
-Secondary color (orange): #f27113
-Text Color: (off white): #f3f3f3
+Primary color: Lilac Purple #da99ff
+Secondary color Dark Purple #52266c
+Text Color: Black or White
+Background color: White
 */
 
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 
 
 body {
-	background-color: #e3b38d;
+	background-color: #ffffff;
 	font-family: 'Lato', sans-serif;
-	color: #f3f3f3;
+	color: #000;
 	font-weight:  400;
 	
 }
@@ -41,7 +42,7 @@ h3 {
 /* ------------LINKS------------ */
 
 a {
-	color:  #f3f3f3;
+	color:  #000;
 	text-decoration:none;
 }
 
@@ -61,12 +62,25 @@ a:active {
 }
 */
 
+/* TEXT ANIMATION */
+
+    .interactive-text {
+        font-family: Arial, sans-serif;
+        font-size: 36px;
+        display: inline-block;
+    }
+
+    .interactive-text span {
+        display: inline-block;
+        transition: all 0.2s ease; /* Add smooth transition */
+    }
 
 
 /* ------------BUTTON------------*/
 
 .description {
 	margin-top: 10px;
+	font-family: 'Oswald', sans-serif;
 }
 
 .center {
@@ -76,6 +90,12 @@ a:active {
 .container {
 	padding-top: -10px;
 }
+
+.section {
+  overflow: hidden;
+}
+
+
 .button, button {
 	border:  none;
 	/* ^ overwrites browser defaults and resets border */
@@ -83,35 +103,51 @@ a:active {
 	font-family:  inherit;
 	/* ^ takes font from outer container (body of html) */
 
-	background-color: #f27113;
-	color:  white;
+	background-color: #ffffff;
+	color:  rgb(0, 0, 0);
+	border: #da99ff;
+	border-color: #da99ff;
+	border-style: dashed;
 	text-decoration:  none;
 
 	padding:  10px;
 	/* adds spacing to the button */
 	border-radius:  3px;
 
-	border-bottom:  2px solid rgba(0, 0, 0, 0.3);
+	/* border-bottom:  2px solid rgba(0, 0, 0, 0.3); */
 	-webkit-transition:  0.2s opacity;
 	-o-transition:  0.2s opacity;
 	transition:  0.2s opacity;
 }
+.button:hover {
+	    background-color: #d0a0ff;
+      border-color: #52266c;
+	  color:  #fff
+
+}
 
     .btn-primary {
-      background-color: #f27113;
-      border-color: #f27113;
+      background-color: #d0a0ff;
+      border-color: #422453;
+	  color:  #fff;
+	  border-style: dashed;
+	  font-weight: bolder;
     }
     
     .btn-primary:hover,
     .btn-primary:focus {
-      background-color: #f48143;
-      border-color: #f48143;
+      background-color: #ffffff;
+      border-color: #52266c;
+	  color:  rgb(0, 0, 0);
+	  border-style: dashed;
     }
 
 	   .btn-primary:active,
     .btn-primary.active {
-      background-color: #e35e00;
-      border-color: #e35e00;
+      background-color: #ffffff;
+      border-color: #532a6b;
+	  color:  rgb(0, 0, 0);
+	  border-style: dashed;
     }
 
 button:hover, button:focus, .button:hover,
@@ -124,8 +160,8 @@ button:hover, button:focus, .button:hover,
 	/* opacity of button = 80% */
 }
 .button__secondary {
-	background-color:  #e0b354;
-	color:  #2b2b2b;
+	background-color:  #da99ff;
+	color:  #000000;
 }
 
 
@@ -136,12 +172,28 @@ button:hover, button:focus, .button:hover,
 
 .navigation-list {
 	list-style-type: none;
+
 }
 
 .navigation-list li {
 	display: inline-block;
 	margin-left: 15px;
 }
+
+.navbar {
+  position: fixed;
+  top: 10;
+  width: 100%;
+  background-color: #da99ff; 
+  color: #fff; 
+  z-index: 100; 
+}
+
+.link {
+	margin-left: 100px;
+	margin-right: 150px;
+}
+
 
 
 * {
@@ -182,6 +234,100 @@ margin: 0 auto;
 text-align: center;
 }
 
+/* CONTACT SECTION */
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+			padding-top: 0;
+			
+        }
+
+        .left-side, .right-side {
+            flex: 1;
+            padding: 20px;
+            font-weight: bold;
+            height:250px
+			
+        }
+
+        .left-side {
+            background-color: rgb(241, 241, 241);
+            color: black;
+            font-family: 'Oswald', sans-serif; /* Apply Oswald font */
+        }
+
+        .right-side {
+            background-color: #da99ff;
+            color: white;
+            font-family: 'Oswald', sans-serif; /* Apply Oswald font */
+        }
+
+        .email-link {
+            text-decoration: none;
+            color: white;
+        }
+        .contact-title {
+            font-size: 50px;
+        }
+/* 
+#contact {
+  position: relative;
+  z-index: 1000;
+
+} */
+
+/* Languages Section */
+
+
+        .language-container {
+            max-width: 800px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .language-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+           /*  margin-right: 200px; */
+        }
+
+        .language-logo {
+            width: 70px;
+            height: 70px;
+            margin: 30px;
+            justify-content: center;
+        }
+
+		.language-title {
+			font-family: 'Oswald', sans-serif; /* Apply Oswald font */
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		.section-title {
+			font-family: 'Oswald', sans-serif; /* Apply Oswald font */
+			font-size: 30px;
+		}
+
+/* PICS */
+
+.center-image {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 
 .profile_portrait {
 	float: left;
@@ -189,6 +335,15 @@ text-align: center;
 	margin-right:  40px;
 	border-radius:  50%;
 }
+
+.about_portrait {
+	float: center;
+	width: 250px;
+	margin-right:  40px;
+	border-radius:  50%;
+}
+
+/* FOOTER */
 
 .page-footer {
   clear: both;
@@ -228,8 +383,23 @@ color: white;
   clear: both;
 }
 
+/* PROJECTS BUTTON */
 
-/* Arrows  */
+  .dropdown-container {
+    display: flex; /* Display the dropdowns in a row */
+    gap: 10px; /* Add some space between the buttons */
+  }
+
+  .dropdown {
+    flex: 1; /* Distribute available space equally between the dropdowns */
+  }
+
+    .custom-dropup .dropdown-menu {
+    bottom: 100%;
+  }
+
+
+/* PROJECTS SCROLLING ARROWS  */
 
 .slider-arrow {
   position: absolute;
@@ -237,8 +407,8 @@ color: white;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  /* background-color: rgba(0, 0, 0, 0); */
-  border-radius: 50%;
+  background-color: rgba(195, 195, 195, 0.607);
+ border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,7 +456,7 @@ color: white;
   }
 
 .grid__item {
-	background-color: #fb8b39;
+	background-color: #da99ff;
 	width: 350px;
 	min-height: auto;
 	margin: 0;
