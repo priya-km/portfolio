@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Priya Maharban - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRIYA-KM</title>
   <link rel="shortcut icon" href="./img/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
   <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #E3B38D; /* Change the background color here */
+    }
+
+      .section {
+    padding-top: 0;
+  }
+
+    header {
+      background-color: #E3B38D;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #d68b2f;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    link {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
     /* Custom CSS styles */
     .navbar-nav .nav-link {
       color: white;
@@ -37,6 +75,35 @@
       animation: typing 1.5s steps(40, end), blink-caret .75s step-end infinite;
     }
 
+/* Center the images within grid items and adjust flex properties */
+.grid-container {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+.grid {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure items are in one row and don't wrap */
+  margin-bottom: 50px; /* Adjust to compensate for negative margin on grid__item */
+}
+
+.grid__item {
+  flex: 0 0 auto;
+  margin-right: 10px; /* Adjust the margin between grid items */
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* Add padding to the grid items to prevent the bottom from being cut off */
+.grid__item img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+
     @keyframes typing {
       from {
         width: 0;
@@ -48,7 +115,6 @@
     }
 
     @keyframes blink-caret {
-
       from,
       to {
         border-color: transparent;
@@ -95,44 +161,135 @@
     }
   </style>
 </head>
-
 <body>
-  <header class="page-header">
-    <img src="img/logo.png" width="200" height="70" alt="Priya M. text logo with bold white text"
-      class="page-header__item">
-    <nav class="navbar navbar-expand-lg navbar-light main-navigation page-header__item">
-      <div class="container">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="work.html">PROJECTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header>
+   <!--  TOP HEADER  -->
+    <h1><img src="img/favicon-32x32.png"> PRIYA-KM</h1>
   </header>
+  <!-- NAV -->
+  <nav>
+    <a href="#home" class="link">HOME</a>
+    <a href="#home">|</a>
+    <a href="#projects" class="link">PROJECTS</a>
+    <a href="#projects">|</a>
+    <a href="#about" class="link">ABOUT</a>
+    <a href="#about">|</a>
+    <a href="#contact" class="link">CONTACT</a>
+  </nav>
 
-  <div class="container">
-    <div class="profile text-center">
-      <img src="img/priya-maharban.jpg" class="profile_portrait slide-in fade-in" alt="Priya Maharban Portrait">
-      <h1><span id="typing-text" class="typing-animation"></span></h1>
-      <p id="fade-in-text" class="fade-in">My name is Priya Maharban. I am a full stack <span>web</span> developer from
-        New York!</p>
-      <a id="fade-in-text" class="btn btn-primary fade-in" href="https://github.com/priya-km" target="_blank">Check out some of my code!</a>
+  <!-- Add the structure for your sections here -->
+  <div id="fullpage">
+    <div class="section" id="home">
+      <!-- HOME SECTION -->
+      <div class="container">
+        <div class="profile text-center">
+          <img src="img/priya-maharban.jpg" class="profile_portrait slide-in fade-in" alt="Priya Maharban Portrait">
+          <h2><span id="typing-text" class="typing-animation"></span></h2>
+          <br>
+          <h3 id="fade-in-text" class="fade-in">My name is Priya Maharban. I am a full stack <span>web</span> developer from New York!</h3>
+          <a id="fade-in-text" class="btn btn-primary fade-in" href="https://github.com/priya-km" target="_blank">Check out some of my code!</a>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="projects" style="padding-top: 0;">
+      <!-- PROJECTS -->
+      <div>
+        <h2 class="center-align">PROJECTS</h2>
+        <br>
+        <div class="grid-container">
+          <div class="grid">
+            <!-- grid items here -->
+            <div class="grid__item">
+              <a href="https://priya-km.github.io/pokedex-app/" target="_blank">
+                <img src="img/pokedex.jpg" alt="Pokedex App Image"></a>
+              <p class="description">This project is a Pokedex App that uses an external API to load data and display a list of Pokemon along with their information when clicked on.</p>
+              <a href="https://priya-km.github.io/pokedex-app/" target="_blank" color="white">Live Pokedex</a><br>
+              <a href="https://github.com/priya-km/pokedex-app" target="_blank">See project on GitHub</a>
+            </div>
+
+            <div class="grid__item">
+              <a href="https://priya-km.github.io/meet/" target="_blank">
+                <img src="img/meet.jpg" alt="Meet App Image"></a>
+              <p class="description">Meet App is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.</p>
+              <h6><b>* This app is currently pending its Google verification status.</b></h6>
+              <a href="https://github.com/priya-km/meet" target="_blank">Meet App's GitHub Repository</a><br>
+              <a href="https://priya-km.github.io/meet/" target="_blank">LIVE Meet App</a>
+            </div>
+
+            <div class="grid__item">
+              <a href="https://priya-km.github.io/to-do-list-app/" target="_blank">
+                <img src="img/todo.jpg" alt="jQuery To Do List App Image"></a>
+              <p class="description">This project is a to-do list app made with jQuery.</p>
+              <a href="https://priya-km.github.io/to-do-list-app/" target="_blank">Live To Do List App</a><br>
+              <a href="https://github.com/priya-km/to-do-list-app" target="_blank">See project on GitHub</a>
+            </div>
+
+            <div class="grid__item">
+              <a href="https://priyakaajal.wordpress.com/" target="_blank">
+                <img src="img/blog.jpg" alt="My Blog Image"></a>
+              <p class="description">If you're interested in seeing my other works in categories such as web or graphic design, photography, animation, etc., you'll find it here! You will also see my blog where I document not only my journey as a web developer but also through my life, things I encounter, things I learn, experiences, etc.</p>
+              <a href="https://priyakaajal.wordpress.com/" target="_blank">My Blog</a>
+            </div>
+
+            <div class="grid__item">
+              <a href="https://myflixpkm.netlify.app/" target="_blank">
+                <img src="img/myflix.jpg" alt="myFlix App Image"></a>
+              <p class="description">The goal of this project is to provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.</p>
+              <a href="https://myflixpkm.netlify.app/" target="_blank">LIVE myFlix App</a><br>
+              <a href="https://github.com/priya-km/myFlix-client" target="_blank">myFlix App Repository</a><br>
+              <a href="https://github.com/priya-km/myflix-app" target="_blank">myFlix App - Server Side</a><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="about">
+      <!-- ABOUT ME -->
+      <div class="container">
+        <h2 class="center-align">ABOUT ME</h2>
+        <br>
+        <div>
+          <div class="center-align">
+            <p class="double-space">Hello world!</p>
+            <p class="double-space">My name is Priya Kaajal Maharban, and I am a full stack web developer based in New York City.
+            I am well versed in many coding languages, frameworks, etc., such as: HTML, CSS, JavaScript, SASS, MERN stack [MongoDB, Express, React, Node.js], Bootstrap, RESTful APIs, and more.</p>
+              <p class="double-space"> Check out my projects page to see for yourself!</p>
+            <div class="center">
+              <br>
+              <a href="files/resume.pdf" class="button" download>Download my Resume!</a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="section" id="contact">
+      <!-- CONTACT -->
+      <div class="container">
+        <h2 class="center-align contact">CONTACT ME</h2>
+        <br>
+      <!--   <div class="center-align">
+          <br>
+          <h2><a href="mailto:priyamaharban@gmail.com">Click here to send me an Email</a></h2>
+          <br>
+        </div> -->
+        
+        <div>
+          <div class="center-align">
+            Priya Maharban
+            <br>
+            <p>For job inquiries or other questions please send me an email!</p>
+            Email: <a href="mailto:priyamaharban@gmail.com">priyamaharban@gmail.com</a><br>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <footer class="page-footer mt-5">
-    <p>Find me on</p>
-    <div class="social-media">
+  <footer class="">
+    <div class="container">
+      <p>Find me on</p>
       <!-- GitHub Logo -->
       <a href="https://github.com/priya-km" target="_blank">
         <img src="img/github_icon.svg" alt="Github">
@@ -176,6 +333,13 @@
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+  <script>
+    new fullpage("#fullpage", {
+      navigation: true,
+      navigationPosition: "right",
+      navigationTooltips: ["Home", "Projects", "About Me", "Contact"],
+    });
+  </script>
 </body>
-
 </html>
