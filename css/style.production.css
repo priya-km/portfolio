@@ -72,6 +72,10 @@ a:active {
 .center {
 	text-align:  center;
 }
+
+.container {
+	padding-top: -10px;
+}
 .button, button {
 	border:  none;
 	/* ^ overwrites browser defaults and resets border */
@@ -166,6 +170,12 @@ button:hover, button:focus, .button:hover,
 	        flex-grow: 1;
 	text-align: right;
 }
+
+  .double-space {
+    line-height: 2; /* You can adjust the value to control the spacing */
+	font-weight: bold;
+  }
+
 .center-align {
 max-width: 700px;
 margin: 0 auto;
@@ -204,13 +214,20 @@ color: white;
   transform: translate(-50%, -50%);
 }
 
-.content {
+/* .content {
   margin-bottom: calc(100vh - 70px);
-}
+} */
 
 .footer-space {
   height: 70px; 
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 
 
