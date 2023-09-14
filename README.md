@@ -9,6 +9,7 @@
 <h5>Future tasks include:</h5>
 - Making it more mobile user friendly <br>
 - Navbar Fixes <br>
+- Possible color palette + font changes again <br>
     
 ## Links 🔗
 [Live Portfolio](https://priya-km.github.io/portfolio "Live View")
