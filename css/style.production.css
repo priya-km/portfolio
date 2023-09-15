@@ -279,12 +279,6 @@ text-align: center;
         .contact-title {
             font-size: 50px;
         }
-/* 
-#contact {
-  position: relative;
-  z-index: 1000;
-
-} */
 
 /* Languages Section */
 
@@ -346,18 +340,21 @@ text-align: center;
 /* FOOTER */
 
 .page-footer {
-  clear: both;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 0;
-background-color: rgba(227, 179, 141, 0.5);
-
-color: white;
-
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
 }
+
+.footer-space {
+  height: 70px; 
+}
+
+
 
 
 .profile {
@@ -373,9 +370,6 @@ color: white;
   margin-bottom: calc(100vh - 70px);
 } */
 
-.footer-space {
-  height: 70px; 
-}
 
 .clearfix::after {
   content: "";
