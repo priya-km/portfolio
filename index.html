@@ -172,13 +172,18 @@
         opacity: 1;
       }
     }
+    .header {
+      background-color: white;
+      z-index: 100;
+    }
   </style>
 </head>
 <body>
   <header>
    <!--  TOP HEADER  -->
-    <h1><img src="img/priyakaajal.png" width="32" height="32"> 
-        <div class="interactive-text">
+<h1 style="background-color: white;">
+    <img src="img/priyakaajal.png" width="32" height="32"> 
+    <div class="interactive-text">
         <span>P</span>
         <span>R</span>
         <span>I</span>
@@ -187,16 +192,18 @@
         <span>-</span>
         <span>K</span>
         <span>M</span>
-    </div></h1>
+    </div>
+</h1>
+
   </header>
   <!-- NAV -->
-  <nav class="navbar">
+  <nav class="navbar navbar-fixed">
     <a href="#home" class="link">HOME</a>
     <a href="#home">|</a>
+        <a href="#about" class="link">ABOUT</a>
+    <a href="#about">|</a>
     <a href="#projects" class="link">PROJECTS</a>
     <a href="#projects">|</a>
-    <a href="#about" class="link">ABOUT</a>
-    <a href="#about">|</a>
     <a href="#contact" class="link">CONTACT</a>
   </nav>
 
@@ -211,6 +218,30 @@
           <h3 id="fade-in-text" class="fade-in">My name is Priya Maharban. I am a full stack <span>web</span> developer from New York!</h3><br>
           <a id="fade-in-text" class="btn btn-primary fade-in" href="https://github.com/priya-km" target="_blank">Check out some of my code!</a>
         </div>
+      </div>
+    </div>
+
+         <!-- ABOUT ME -->
+    <div class="section" id="about">
+      <div class="container">
+        <h2 class="center-align">ABOUT ME</h2>
+        <br>
+        <div>
+          <div class="center-align">
+                      <img src="img/priyakaajal.png" class="about_portrait slide-in fade-in" alt="Priya Maharban Cartoon">
+           <br>
+           <br>
+                      <p class="double-space">Hello world!</p>
+            <p class="double-space">My name is Priya Kaajal Maharban, and I am a full stack web developer based in New York City.
+            I'm proficient in both front end and back end technologies. Check out my work in the next section!</p>
+            <div class="center">
+              <br>
+              <a href="files/resume.pdf" class="button" download>Download my Resume!</a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
       </div>
     </div>
 
@@ -305,29 +336,6 @@
 </div>
     </div>
 
-     <!-- ABOUT ME -->
-    <div class="section" id="about">
-      <div class="container">
-        <h2 class="center-align">ABOUT ME</h2>
-        <br>
-        <div>
-          <div class="center-align">
-                      <img src="img/priyakaajal.png" class="about_portrait slide-in fade-in" alt="Priya Maharban Cartoon">
-           <br>
-           <br>
-                      <p class="double-space">Hello world!</p>
-            <p class="double-space">My name is Priya Kaajal Maharban, and I am a full stack web developer based in New York City.
-            I'm proficient in both front end and back end technologies. Such as the ones listed in the next section.</p>
-            <div class="center">
-              <br>
-              <a href="files/resume.pdf" class="button" download>Download my Resume!</a>
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
-      </div>
-    </div>
 <!-- LANGUAGES SECTION  -->
       <div class="section" id="languages">
       <div class="container">
