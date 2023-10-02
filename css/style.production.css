@@ -417,6 +417,33 @@ text-align: center;
 
 /* PROJECTS SCROLLING ARROWS  */
 
+/* Mobile devices */
+
+@media (max-width: 767px) {
+  /* Hide the left and right arrows */
+  .slider-arrow {
+    display: none !important;
+  }
+
+    .slider-arrow-left {
+    display: block;
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+
+  .slider-arrow-right {
+    display: block;
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+}
+
+/* Desktop */
+
 .slider-arrow {
   position: absolute;
   top: 50%;
