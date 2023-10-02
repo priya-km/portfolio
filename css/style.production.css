@@ -206,13 +206,14 @@ button:hover, button:focus, .button:hover,
   left: 0;
   width: 100%;
   z-index: 1000; /* Ensure the navbar is on top */
+  padding: 0 10%;
 }
 
-.link {
+/* .link {
 	margin-left: 100px;
 	margin-right: 150px;
 }
-
+ */
 
 
 * {
@@ -415,6 +416,33 @@ text-align: center;
 
 
 /* PROJECTS SCROLLING ARROWS  */
+
+/* Mobile devices */
+
+@media (max-width: 767px) {
+  /* Hide the left and right arrows */
+  .slider-arrow {
+    display: none !important;
+  }
+
+    .slider-arrow-left {
+    display: block;
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+
+  .slider-arrow-right {
+    display: block;
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+}
+
+/* Desktop */
 
 .slider-arrow {
   position: absolute;
