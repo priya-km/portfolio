@@ -206,13 +206,14 @@ button:hover, button:focus, .button:hover,
   left: 0;
   width: 100%;
   z-index: 1000; /* Ensure the navbar is on top */
+  padding: 0 10%;
 }
 
-.link {
+/* .link {
 	margin-left: 100px;
 	margin-right: 150px;
 }
-
+ */
 
 
 * {
