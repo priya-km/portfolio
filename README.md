@@ -1,8 +1,5 @@
 # Priya K Maharban's Portfolio
-![github banner](https://github.com/priya-km/portfolio/assets/118628757/d9dee2e0-380e-4166-8da8-a5dfc73dcd14)
-
-
-
+![github banner](https://github.com/priya-km/portfolio/assets/118628757/91eeab49-b745-4e3c-8ec4-e799ff5b4321)
 
 ## Hello world!👋
 <p> My name is Priya Maharban and I'm a web developer from New York. This my current portfolio consisting of the projects/apps that I have developed!</p>
