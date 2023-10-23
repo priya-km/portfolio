@@ -1,5 +1,6 @@
 # Priya K Maharban's Portfolio
-![github-header](https://user-images.githubusercontent.com/118628757/217391435-63f7035b-0638-4c86-b6ee-2c591ad24a9b.png)
+![github banner](https://github.com/priya-km/portfolio/assets/118628757/d9dee2e0-380e-4166-8da8-a5dfc73dcd14)
+
 
 
 
