@@ -545,3 +545,19 @@ text-align: center;
     font-size: 22px;
   }
 }
+
+@media screen and (max-width: 768px) { /* or another breakpoint that suits your design */
+  .profile img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .profile h2, .profile h3, .profile a {
+    text-align: center; /* Ensure text is centered */
+    width: 100%; /* Full width */
+    display: block; /* Display as a block element */
+    margin: 0 auto; /* Centering if needed */
+  }
+}

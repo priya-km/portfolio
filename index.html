@@ -181,20 +181,7 @@
 <body>
   <header>
    <!--  TOP HEADER  -->
-<h1 style="background-color: white;">
-    <img src="img/priyakaajal.png" width="32" height="32"> 
-    <div class="interactive-text">
-        <span>P</span>
-        <span>R</span>
-        <span>I</span>
-        <span>Y</span>
-        <span>A</span>
-        <span>-</span>
-        <span>K</span>
-        <span>M</span>
-    </div>
-</h1>
-
+    <h1><img src="img/priyakaajal.png" width="32" height="32"> PRIYA-KM</h1>
   </header>
   <!-- NAV -->
   <nav class="navbar navbar-fixed">
@@ -208,18 +195,19 @@
   </nav>
 
   <div id="fullpage">
-    <div class="section" id="home">
-      <!-- HOME SECTION -->
-      <div class="container">
-        <div class="profile text-center">
-          <img src="img/priya-maharban.jpg" class="profile_portrait slide-in fade-in" alt="Priya Maharban Portrait">
-          <h2><span id="typing-text" class="typing-animation"></span></h2>
-          <br>
-          <h3 id="fade-in-text" class="fade-in">My name is Priya Maharban. I am a full stack <span>web</span> developer from New York!</h3><br>
-          <a id="fade-in-text" class="btn btn-primary fade-in" href="https://github.com/priya-km" target="_blank">Check out some of my code!</a>
-        </div>
-      </div>
+<div class="section" id="home">
+  <!-- HOME SECTION -->
+  <div class="container">
+    <div class="profile text-center">
+      <img src="img/priya-maharban.jpg" class="profile_portrait slide-in fade-in" alt="Priya Maharban Portrait" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+      <h2><span id="typing-text" class="typing-animation"></span></h2>
+      <br>
+      <h3 id="fade-in-text" class="fade-in">My name is Priya Maharban. I am a full stack <span>web</span> developer from New York!</h3><br>
+      <a id="fade-in-text" class="btn btn-primary fade-in" href="https://github.com/priya-km" target="_blank">Check out some of my code!</a>
     </div>
+  </div>
+</div>
+
 
          <!-- ABOUT ME -->
     <div class="section" id="about">
@@ -246,89 +234,126 @@
     </div>
 
      <!-- PROJECTS -->
-    <div class="section" id="projects" style="padding-top: 0;">
-      <div>
-        <h2 class="center-align">PROJECTS</h2>
-        <br>
-        <!-- Left Arrow -->
-      <div class="slider-arrow slider-arrow-left">
-       <img src="img/left-arrow.png" alt="Left Arrow">
-        </div>
-        <div class="grid-container">
-          <div class="grid">
+  <div class="section" id="projects" style="padding-top: 0;">
+          <div>
+            <h2 class="center-align">PROJECTS</h2>
+            <br>
+            <!-- Left Arrow -->
+          <div class="slider-arrow slider-arrow-left">
+          <img src="img/left-arrow.png" alt="Left Arrow">
+            </div>
+            <div class="grid-container">
+              <div class="grid">
 
-            <!-- grid items here -->
-            <!-- 1 - MYFLIX -->
-                     <div class="grid__item">
-              <a href="https://myflixpkm.netlify.app/" target="_blank">
-                <img src="img/myflix.jpg" alt="myFlix App Image"></a>
-              <p class="description">For this project I created the myFlix API as well as a React and Angular website for myFlix. myFlix provides users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.</p>
-        <div class="dropdown-container custom-dropup">
-          <!-- React dropdown -->
+                <!-- grid items here -->
+                <!-- 1 - MYFLIX -->
+                        <div class="grid__item">
+                  <a href="https://myflixpkm.netlify.app/" target="_blank">
+                    <img src="img/myflix.jpg" alt="myFlix App Image"></a>
+                  <p class="description">For this project I created the myFlix API as well as a React and Angular website for myFlix. myFlix provides users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.</p>
+            <div class="dropdown-container custom-dropup">
+              <!-- React dropdown -->
+              <div class="dropdown">
+                <button class="btn btn-primary fade-in dropdown-toggle" type="button" data-toggle="dropdown">
+                  React Client
+                </button>
+                <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://myflixpkm.netlify.app/" target="_blank">React Demo</a>
+          <a class="dropdown-item" href="https://github.com/priya-km/myFlix-client" target="_blank">React Code</a>
+          <a class="dropdown-item" href="https://github.com/priya-km/myflix-app" target="_blank">API Code</a>
+        </div>
+      </div>
+
+      <!-- Angular dropdown -->
+      <div class="dropdown">
+        <button class="btn btn-primary fade-in dropdown-toggle" type="button" data-toggle="dropdown">
+          Angular Client
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://priya-km.github.io/myFlix-Angular-client/welcome" target="_blank">Angular Demo</a>
+          <a class="dropdown-item" href="https://github.com/priya-km/myFlix-Angular-client" target="_blank">Angular Code</a>
+          <a class="dropdown-item" href="https://github.com/priya-km/myflix-app" target="_blank">API Code</a>
+        </div>
+      </div>
+    </div>
+                </div>
+      <!-- 2 - RECIPE RACK -->
+      <div class="grid__item">
+        <a href="https://github.com/priya-km/recipe-app" target="_blank">
+          <img src="img/rr.jpg" alt="Recipe Rack App Image">
+        </a>
+        <p class="description">This is a recipe wiki app created using Python and Django. Its front end client is hosted on Heroku. Please see the Github repository for specifics.</p>
+        
+        <!-- Button container with inline or flex display -->
+        <div style="display: flex">
+          
+          <!-- 2 - Demo dropdown -->
           <div class="dropdown">
             <button class="btn btn-primary fade-in dropdown-toggle" type="button" data-toggle="dropdown">
-              React Client
+              Demo
             </button>
             <div class="dropdown-menu">
-      <a class="dropdown-item" href="https://myflixpkm.netlify.app/" target="_blank">React Demo</a>
-      <a class="dropdown-item" href="https://github.com/priya-km/myFlix-client" target="_blank">React Code</a>
-      <a class="dropdown-item" href="https://github.com/priya-km/myflix-app" target="_blank">API Code</a>
-    </div>
-  </div>
-
-  <!-- Angular dropdown -->
-  <div class="dropdown">
-    <button class="btn btn-primary fade-in dropdown-toggle" type="button" data-toggle="dropdown">
-      Angular Client
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="https://priya-km.github.io/myFlix-Angular-client/welcome" target="_blank">Angular Demo</a>
-      <a class="dropdown-item" href="https://github.com/priya-km/myFlix-Angular-client" target="_blank">Angular Code</a>
-      <a class="dropdown-item" href="https://github.com/priya-km/myflix-app" target="_blank">API Code</a>
-    </div>
-  </div>
-</div>
-
+              <a class="dropdown-item" href="https://priya-km.github.io/myFlix-Angular-client/welcome" target="_blank">Demo Video</a>
+              <a class="dropdown-item" href="https://github.com/priya-km/myFlix-Angular-client" target="_blank">Client Demo</a>
             </div>
-              <!-- 2 - POKEDEX -->
-            <div class="grid__item">
-              <a href="https://priya-km.github.io/pokedex-app/" target="_blank">
-                <img src="img/pokedex.jpg" alt="Pokedex App Image"></a>
-              <p class="description">This project is a Pokedex App that uses an external API to load data and display a list of Pokemon along with their information when clicked on.</p>
-              <a href="https://priya-km.github.io/pokedex-app/" class="btn btn-primary fade-in" target="_blank" color="white">Demo</a>
-              <a href="https://github.com/priya-km/pokedex-app" class="btn btn-primary fade-in"  target="_blank">Code</a>
-            </div>
+          </div>
+          <!-- Code button -->
+          <a href="https://github.com/priya-km/recipe-app" class="btn btn-primary fade-in" target="_blank">Code</a>
+
+        </div>
+      </div>
+
+
+              
+    <!-- 3 - POKEDEX -->
+    <div class="grid__item">
+      <a href="https://priya-km.github.io/pokedex-app/" target="_blank">
+        <img src="img/pokedex.jpg" alt="Pokedex App Image">
+      </a>
+      <p class="description">This project is a Pokedex App that uses an external API to load data and display a list of Pokemon along with their information when clicked on.</p>
+      <div style="display: flex; align-items: center; gap: 210px;">
+        <a href="https://priya-km.github.io/pokedex-app/" class="btn btn-primary fade-in" target="_blank" color="white">Demo</a>
+        <a href="https://github.com/priya-km/pokedex-app" class="btn btn-primary fade-in" target="_blank">Code</a>
+      </div>
+    </div>
+
 
                <!-- 4 - CHAT APP -->
             <div class="grid__item">
               <a href="https://priya-km.github.io/to-do-list-app/" target="_blank">
                 <img src="img/chat.jpg" alt="Chat App Image"></a>
               <p class="description">Chat App is a mobile app made with React Native and the Gifted Chat library. It is designed to allow users to simultaneously message, send photos, and their locations to one another. Users can also view chat logs even while offline, for their convenience.</p>
-              <a href="https://github.com/priya-km/chat-app#downloading--using-chat-app" class="btn btn-primary fade-in" target="_blank">Demo</a>
-              <a href="https://github.com/priya-km/chat-app" class="btn btn-primary fade-in" target="_blank">Code</a>
+              <div style="display: flex; align-items: center; gap: 210px;">
+                <a href="https://github.com/priya-km/chat-app#downloading--using-chat-app" class="btn btn-primary fade-in" target="_blank">Demo</a>
+                <a href="https://github.com/priya-km/chat-app" class="btn btn-primary fade-in" target="_blank">Code</a>
+              </div>
             </div>
 
-            <!-- 3 - MEET -->
+            <!-- 5 - MEET -->
             <div class="grid__item">
               <a href="https://priya-km.github.io/meet/" target="_blank">
                 <img src="img/meet.jpg" alt="Meet App Image"></a>
               <p class="description">Meet App is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.</p>
               <h6><b>* This app is currently pending its Google verification status.</b></h6>
-              <a href="https://priya-km.github.io/meet/" class="btn btn-primary fade-in" target="_blank">Demo</a>
-              <a href="https://github.com/priya-km/meet" class="btn btn-primary fade-in" target="_blank">Code</a>
+              <div style="display: flex; align-items: center; gap: 210px;">
+                <a href="https://priya-km.github.io/meet/" class="btn btn-primary fade-in" target="_blank">Demo</a>
+                <a href="https://github.com/priya-km/meet" class="btn btn-primary fade-in" target="_blank">Code</a>
+              </div>
               
             </div>
 
-            <!-- 4 - TO DO -->
+            <!-- 6 - TO DO -->
             <div class="grid__item">
               <a href="https://priya-km.github.io/to-do-list-app/" target="_blank">
                 <img src="img/todo.jpg" alt="jQuery To Do List App Image"></a>
               <p class="description">This project is a to-do list app made with jQuery.</p>
-              <a href="https://priya-km.github.io/to-do-list-app/" class="btn btn-primary fade-in" target="_blank">Demo</a>
-              <a href="https://github.com/priya-km/to-do-list-app" class="btn btn-primary fade-in" target="_blank">Code</a>
+              <div style="display: flex; align-items: center; gap: 210px;">
+                <a href="https://priya-km.github.io/to-do-list-app/" class="btn btn-primary fade-in" target="_blank">Demo</a>
+                <a href="https://github.com/priya-km/to-do-list-app" class="btn btn-primary fade-in" target="_blank">Code</a>
+              </div>
             </div>
 
-            <!-- 5 - BLOG -->
+            <!-- 7 - BLOG -->
                  <div class="grid__item">
               <a href="https://priyakaajal.wordpress.com/" target="_blank">
                 <img src="img/blog.jpg" alt="My Blog Image"></a>
@@ -468,7 +493,7 @@
             <!-- Center the image using CSS -->
             <div class="contact-container row">
                 <div class="center-image col-15">
-                    <img src="img/contact.png" width="400" height="330">
+                    <img src="img/contact.png" width="400" height="330" style="margin-bottom: -200px;">
                 </div>
                 <br>
 
@@ -543,32 +568,6 @@
       });
     });
   });
-</script>
-
-<!-- LOGO TEXT ANIMATION -->
-<script>
-document.addEventListener('mousemove', (e) => {
-    const letters = document.querySelectorAll('.interactive-text span');
-
-    letters.forEach((letter) => {
-        const mouseX = e.clientX;
-        const mouseY = e.clientY;
-        const letterX = letter.getBoundingClientRect().left + window.scrollX + letter.offsetWidth / 2;
-        const letterY = letter.getBoundingClientRect().top + window.scrollY + letter.offsetHeight / 2;
-
-        const deltaX = mouseX - letterX;
-        const deltaY = mouseY - letterY;
-        const angle = Math.atan2(deltaY, deltaX);
-        const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-
-        const maxDistance = 100; // Adjust this value to control the effect intensity
-        const maxRotation = 30; // Adjust this value to control the maximum rotation angle
-
-        const rotation = (distance / maxDistance) * maxRotation;
-
-        letter.style.transform = `rotate(${rotation * (Math.PI / 180)}rad)`;
-    });
-});
 </script>
 
 <!-- PROFILE PIC FADE ANIMATION -->
