@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myFlix Case Study - Priya-KM</title>
+  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+            body {
+        font-family: 'Oswald', sans-serif; 
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff; /* Change the background color here */
+        }
+
+        .section {
+        padding-top: 0;
+    }
+
+        header {
+        background-color: #ffffff;
+        color: #000000;
+        text-align: center;
+        padding: 20px 0;
+        }
+
+        nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #da99ff;
+        color: #fff;
+        padding: 10px 0;
+        }
+
+        link {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: 0.3s;
+        }
+
+        nav a:hover {
+        background-color: #fac7fe;
+        }
+
+        /* Custom CSS styles */
+        .navbar-nav .nav-link {
+        color: white;
+        }
+
+        .nav {
+        color: white;
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+        color: rgb(255, 255, 255);
+        }
+
+        a.link, a {
+        color:#fff;
+        }
+
+        .btn-primary:active,
+        .btn-primary.active {
+        background-color: #da99ff;
+        color: black;
+        border-color: #da99ff;
+        }
+    </style>
+</head>
+<body>
+  <header>
+   <!--  TOP HEADER  -->
+    <h1><img src="img/priyakaajal.png" width="32" height="32">PRIYA-KM</h1>
+  </header>
+  <!-- NAV -->
+<nav class="navbar navbar-fixed">
+  <a href="index.html#home" class="link">HOME</a>
+  <span>|</span>
+  <a href="index.html#about" class="link">ABOUT</a>
+  <span>|</span>
+  <a href="index.html#projects" class="link">PROJECTS</a>
+  <span>|</span>
+  <a href="index.html#contact" class="link">CONTACT</a>
+</nav>
+
+  <br>
+    <!-- MAIN CONTENT -->
+<div class="container" style="margin-top: 80px;"> 
+  <div style="text-align: center;">
+  <img src="img/mf-logo.png" alt="myFlix Logo" width="426" height="240">
+  </div>
+ 
+    <div class="intro">
+    <div class="text-content">
+        <h2>Overview</h2>
+        <p>myFlix is a movie wiki web app that was developed using the MERN stack. It provides users with access to information about movies, directors, and movie genres. Users also have the ability to create an account, update their personal information, and create a list of favorite movies.</p>
+
+        <h2>Purpose</h2>
+        <p>myFlix was built as a personal project for my web development course at CareerFoundry to master my skills of full-stack web development with languages such as Javascript and its libraries such as React.</p>
+
+        <h2>Objective</h2>
+        <p>The goal of this project was to create the server side as well as the client side of this movie wiki app fully from scratch and host it on a live site. In the end giving me a polished project to add to my portfolio.</p>
+        <div style="display: flex; align-items: center; gap: 30px;">
+        <a href="https://myflixpkm.netlify.app/" class="btn btn-primary fade-in" target="_blank" color="white">Demo</a>
+        <br>
+        <br>
+        <div class="dropdown">
+            <button class="btn btn-primary fade-in dropdown-toggle" type="button" data-toggle="dropdown">
+              Code
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://github.com/priya-km/myflix-app" target="_blank">Server Side / API Code</a>
+              <a class="dropdown-item" href="https://github.com/priya-km/myFlix-client" target="_blank">Client Side / React Code</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <a href="img/mf-main.png" target="_blank">
+        <img src="img/mf-main.png" alt="myFlix main page" width="640" height="420">
+        </a>
+    </div>
+    </div>
+  <!--BUTTONS BELOW LOGO, CODE, DEMO, ETC -->
+  <hr>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Technical Requirements</h2>
+        <ul>
+          <li>Build a server-side and client-side for myFlix based on the MERN stack.</li>
+          <li>Build a RESTful API using Node.js, Express, and MongoDB.</li>
+          <li>Build a dynamic front-end using React.</li>
+          <li>Build a single-page application (SPA) that uses state routing to navigate between views and share URLs.</li>
+          <li>Use parcel as the build tool for the application.</li>
+          <li>Deploy the application to Heroku or Netlify.</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <h2>Technical Stack</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (ES6)</li>
+          <li>React</li>
+          <li>React-Bootstrap</li>
+          <li>Parcel</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>Heroku</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <h2>Approach</h2>
+   <div class="server">
+        <h3>Server Side</h3>
+        <p>The initial steps of this project involved creating a server-side RESTful API with URL endpoints and hosting movie, director, and genre information in a database.</p>
+        
+        <p>For the server-side of the myFlix app, I developed a RESTful API using Node.js and Express. This API provides movie information in JSON format, with the data stored using MongoDB. Data retrieval and manipulation are performed using CRUD methods.</p>
+        <p>Additionally, I implemented user authentication and authorization to enhance app security. This was achieved through HTTP and JWT authentication methods. The API's functionality was thoroughly tested using Postman.</p>
+        <div class="image-container">
+        <a href="img/mf_movies.png" target="_blank">
+        <img src="img/mf_movies.png" alt="Postman get all movies testing" width="640" height="458">
+        </a>
+        </div>
+        <div class="image-container">
+        <br>
+        <a href="img/mf_unauth.png" target="_blank">
+        <img src="img/mf_unauth.png" alt="Postman unauthorized user testing" width="640" height="420">
+        </a>
+        </div>
+   </div> 
+   <br>
+   <br>
+   <br>
+
+    <div class="client">
+    <h3>Client Side</h3>
+    <p>Once the API was built, I started to build the interface in which users would see and interact with. It's a single-page, responsive application with routing, rich interactions, several interface views, and a polished user experience. All built with React.</p>
+
+    <div class="screenshot-container">
+        <a href="img/mf-login.png" target="_blank">
+        <img src="img/mf-login.png" alt="Login View">
+        </a>
+        <a href="img/mf-profile.png" target="_blank">
+        <img src="img/mf-profile.png" alt="Main View">
+        </a>
+        <a href="img/mf-signup.png" target="_blank">
+        <img src="img/mf-signup.png" alt="Profile View">
+        </a>
+    </div>
+    </div>
+    <hr>
+   <div class="challenges">
+    <h2>Challenges</h2>
+    <p>This is one of my favorite projects despite how challenging it was at times. Upon building the server side I ended up running into a minor issue due to using old Mongoose model syntax. That was quickly solved thanks to the help of my CareerFoundry Mentor, Paulo who walked me through using console.log statements in pieces of my code to eventually narrow down and correct the issue.</p>
+    <p>When it came to the client side, I had to take some more time to fully grasp how React works to get specific features to work properly and get the results that I wanted. For example, I took some time to finally get my favorite movies feature to work and for it to properly display on the users profile. I had to go back and make sure I was correctly calling my API and that each view was properly formatted to display correctly. I’m glad to say I am a lot more comfortable with React now.</p>
+   </div>
+   <hr>
+   <div class="credits">
+    <h2>Credits</h2>
+    <ul>
+        <li>My Role: Lead Developer</li>
+        <li>Tutor: Shrey Kumar</li>
+        <li>Mentor: Paulo Andrade</li>
+    </ul>
+    <br>
+   </div>
+</div>
+    <footer class="page-footer-cs">
+        <div class="container">
+            <p>Find me on</p>
+            <!-- GitHub Logo -->
+            <a href="https://github.com/priya-km" target="_blank">
+                <img src="img/github_icon.svg" alt="Github">
+            </a>
+            <!-- Email Logo -->
+            <a href="mailto:priyamaharban@gmail.com" class="email-link" target="_blank">
+              <img src="img/email_icon.svg" width="32" height="32" alt="Email Me">
+              </a>
+            <!-- LinkedIn Logo -->
+            <a href="https://www.linkedin.com/in/priyamaharban" target="_blank">
+                <img src="img/linkedin_icon.svg" width="30" height="30" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+<!--DROP DOWN BUTTON-->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var dropdowns = document.querySelectorAll(".dropdown-toggle");
+    
+    dropdowns.forEach(function (dropdown) {
+      dropdown.addEventListener("click", function () {
+        var dropdownMenu = this.nextElementSibling;
+        if (dropdownMenu.style.display === "block") {
+          dropdownMenu.style.display = "none";
+        } else {
+          dropdownMenu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
