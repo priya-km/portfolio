@@ -372,6 +372,18 @@ text-align: center;
     z-index: 0;
 }
 
+.page-footer-cs {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 0;
+}
+
 .footer-space {
   height: 70px; 
 }
@@ -476,6 +488,48 @@ text-align: center;
   transition: transform 0.2s ease; /* Add a smooth transition effect */
 }
 
+/* ---------MF CASE STUDY ---------------- */
+
+.intro {
+  display: flex; /* Use flexbox to arrange contents side by side */
+}
+
+.text-content {
+  flex: 1; /* Allow the text content to take up available space */
+  padding-right: 20px; /* Add some spacing between text and image */
+}
+
+.image-container {
+  flex: 0; /* Prevent the image from growing to fill space */
+  float: right; /* Float the image to the right */
+}
+
+.zoom-image {
+  object-fit: contain; /* Use 'contain' instead of 'cover' */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container:hover .zoom-image {
+  transform: scale(1.2); /* Increase the scale for zoom effect on hover */
+}
+
+.screenshot-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* Add margin as needed */
+}
+
+.screenshot-container a {
+  margin-right: 10px; /* Adjust the margin to control the space between images */
+}
+
+.screenshot-container img {
+  max-width: 100%; /* Ensure images do not exceed their original width */
+  height: auto; /* Maintain aspect ratio */
+}
 
 
 /* ------------GRID FALLBACK------------ */
@@ -561,3 +615,21 @@ text-align: center;
     margin: 0 auto; /* Centering if needed */
   }
 }
+
+@media (max-width: 768px) {
+  .intro {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of elements on smaller screens */
+    align-items: center; /* Center align elements horizontally */
+  }
+
+  .image-container {
+    margin-top: 20px; /* Add space between text and image on mobile */
+  }
+
+  .image-container img {
+    max-width: 100%; /* Make the image responsive to the container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
