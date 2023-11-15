@@ -100,7 +100,7 @@
   <div style="text-align: center;">
   <img src="img/mf-logo.png" alt="myFlix Logo" width="426" height="240">
   </div>
- 
+ <!-- INTRO CONTENT -->
     <div class="intro">
     <div class="text-content">
       <h1>Case Study</h1>
@@ -135,6 +135,7 @@
     </div>
     </div>
   <!--BUTTONS BELOW LOGO, CODE, DEMO, ETC -->
+  <!-- TECH STACK -->
   <hr>
     <div class="row">
       <div class="col-sm-6">
@@ -165,54 +166,214 @@
       </div>
     </div>
     <hr>
+    <!-- APPROACH -->
     <h2>Approach</h2>
    <div class="server">
-        <h3>Server Side</h3>
-        <p>The initial steps of this project involved creating a server-side RESTful API with URL endpoints and hosting movie, director, and genre information in a database.</p>
-        
-        <p>For the server-side of the myFlix app, I developed a RESTful API using Node.js and Express. This API provides movie information in JSON format, with the data stored using MongoDB. Data retrieval and manipulation are performed using CRUD methods.</p>
-        <p>Additionally, I implemented user authentication and authorization to enhance app security. This was achieved through HTTP and JWT authentication methods. The API's functionality was thoroughly tested using Postman.</p>
-        <div class="image-container">
-        <a href="img/mf_movies.png" target="_blank">
-        <img src="img/mf_movies.png" alt="Postman get all movies testing" width="640" height="458">
-        </a>
-        </div>
-        <div class="image-container">
         <br>
-        <a href="img/mf_unauth.png" target="_blank">
-        <img src="img/mf_unauth.png" alt="Postman unauthorized user testing" width="640" height="420">
-        </a>
+        <!-- BACK END -->
+        <h3>Back End</h3>
+        <p>The initial steps of this project involved creating a server-side RESTful API with URL endpoints and hosting movie, director, and genre information in a database.</p>
+        <div style="display: flex; align-items: flex-start;">
+            <a href="img/mern.png" target="_blank">
+                <img src="img/mern.png" alt="MERN stack logo" width="400" height="220" style="margin-right: 20px;">
+            </a>
+            <div>
+                <h4>Installing MERN stack technologies</h4>
+                <p> The MERN stack is a powerful set of tools used in web development, each playing a unique role. MongoDB acts as the database, storing and organizing data flexibly. Express.js is a server-side framework that manages interactions between the front-end and the database. React.js is used for building dynamic and interactive user interfaces. Lastly, Node.js allows for server-side scripting, essentially enabling JavaScript to be used outside the browser. Together, these technologies provide a streamlined process for full-stack development, using JavaScript across both front-end and back-end development.</p>
+                <p>Since this project uses the MERN stack I started by getting my environment ready with installing Node.js and Express.</p>
+            </div>
         </div>
+
+        <div style="display: flex; align-items: flex-start;">
+            <div style="margin-right: 20px;">
+                <h4>Defining API End Points</h4>
+                <p>At this stage, I started by outlining the specific functions my web application needed to perform, similar to a chef planning a menu. These functions, known as API endpoints, are like individual recipes, directing the app on how to respond to user requests. Then, I wrote the actual instructions in a file named 'index.js'. This file is like my guidebook, detailing how each function should be executed, ensuring the application reacts appropriately to user interactions.</p>
+            </div>
+            <a href="img/endpoint.png" target="_blank">
+                <img src="img/endpoint.png" alt="documentation.html screenshot" width="400" height="220">
+            </a>
+        </div>
+
+        <div style="display: flex; align-items: flex-start;">
+          <a href="img/mongodb.png" target="_blank">
+            <img src="img/mongodb.png" alt="Mongodb logo" width="300" height="120" style="margin-right: 20px;">
+          </a>
+         <div> 
+          <h4>Setting up the database with MongoDB</h4>
+          <p>The decision to use MongoDB was driven by two main qualities of MongoDB: its high performance and scalability. <br>
+            <br>
+            <b>High performance</b> means that when users search for information about movies, the app can quickly find and display this data. Imagine it like a super-efficient librarian who can find a book in a huge library in seconds. <br>
+            <br>
+            <b>Scalability</b> is important because it allows the app to easily handle more users or more movie information as it grows. It's like having a library that can effortlessly expand its shelves and collection as more books are added. These features of MongoDB make it an ideal choice for an app like myFlix, where quick access to a vast and growing collection of movie information is crucial for a good user experience.</p>
+            <br>
+        </div>
+        </div>
+
+        <div style="display: flex; align-items: flex-start;">
+            <div style="margin-right: 20px;">
+                <h4>Defining the User and Movie models</h4>
+                <p>After choosing MongoDB for the database, the next step was to create 'models' for Users and Movies in the MyFlix app. Think of these models as blueprints or templates.<br><br>
+                The <b>User model</b> is like a blueprint for all the information we want to store about each user, like their name, email, and preferences. It helps the app understand what user information looks like and how to organize it.<br><br>
+                Similarly, the <b>Movie model</b> is a blueprint for all the details we want to keep about each movie, such as the title, director, genre, and release date. This model helps the app categorize and manage the vast movie information efficiently.<br><br>
+                By defining these models, I essentially set up a structured way for the MyFlix app to handle and store information. It's like organizing files into well-labeled folders, making it easier to find and use them later. This organization is crucial for the app to function smoothly and provide a great experience for movie enthusiasts.<br><br>
+                Interestingly, this phase of the project often found me accompanied by my dog, Rosie, who would sit next to my laptop as I worked on the 'models.js' file and others. Her presence added a sense of calm and companionship to the hours spent coding and organizing data for myFlix.</p>
+            </div>
+            <div>
+              <a href="img/dog.png" target="_blank">
+                <img src="img/dog.png" alt="My dog, Rosie next to my laptop" width="300" height="420">
+              </a>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: flex-start;">
+          <a href="img/mf_movies.png" target="_blank">
+            <img src="img/mf_movies.png" alt="Postman get all movies testing" width="640" height="458" style="margin-right: 5px;">
+          </a>
+         <div> 
+           <h4>User Authentication and Authorization</h4>
+            <p>In the next phase of developing myFlix, I used a tool called Postman to test the endpoints I had created.<br> <br>Think of Postman like a rehearsal for a play, where I check each part of the app to make sure it works as expected, much like actors rehearsing their lines. This step is crucial to ensure that when users interact with the app, it responds correctly and smoothly. <br><br>Additionally, I focused on implementing user security through two files: <b>auth.js and passport.js</b>. This was done with HTTP authentication and JWT tokens. These files are like the security guards of the app.</p>
+        </div>
+        </div>
+        <br>
+        <br>
+        <div style="display: flex; align-items: flex-start;">
+            <div style="margin-right: 20px;">
+              <p>The <b>auth.js</b> file is responsible for 'authentication,' which is like checking a guest's invitation at a party. It confirms users are who they say they are when they log in.<br><br>
+              The <b>passport.js</b> file handles 'authorization,' which is like giving guests a pass to access different areas of the party based on their roles. This ensures that users only access information and features they are allowed to, maintaining privacy and security in the app. This combination of authentication and authorization is essential to protect both the users and the information within myFlix.</p>
+            </div>
+          <div>
+            <a href="img/mf_unauth.png" target="_blank">
+            <img src="img/mf_unauth.png" alt="Postman unauthorized user testing" width="640" height="400">
+            </a>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: flex-start;">
+            <div style="margin-right: 5px;">
+                <a href="img/renderheroku.png" target="_blank">
+                    <img src="img/renderheroku.png" alt="Graphic saying Render vs Heroku" width="600" height="150">
+                </a>
+            </div>
+          <br>
+          <br>
+            <div>
+                <h4>Hosting the API</h4>
+                <p>The final step in creating the back end of myFlix was to host the API. This means finding a place on the internet where the app's data and functions live, so they can be accessed from anywhere. It's like choosing a physical location for a store where people can visit. Initially, I used a service called <b>Render</b>, which is like a free space to set up shop. However, I noticed that Render was quite slow, meaning it took a long time for users to access information from myFlix, similar to a customer waiting too long in line at a store.
+                <br> <br>Realizing that this slow speed might frustrate users, I decided to switch to a different hosting service called <b>Heroku</b> shortly after beginning the front-end development. Heroku is another platform that provides space on the internet, but it's known for being faster and more reliable. This switch was like moving the store to a better location with quicker service, ensuring that users of myFlix could get the information they want promptly and efficiently. Making this change was important before moving on to developing the client side of the project</p>
+            </div>
+        </div>
+
    </div> 
    <br>
    <br>
    <br>
-
+<!-- FRONT END -->
     <div class="client">
-    <h3>Client Side</h3>
-    <p>Once the API was built, I started to build the interface in which users would see and interact with. It's a single-page, responsive application with routing, rich interactions, several interface views, and a polished user experience. All built with React.</p>
-    <p>Some of the interface views are the log in view, sign up view, main view (all movies), single movie view, and profile view.</p>
-   <a href="https://github.com/priya-km/myFlix-client#essential-views--features" target="_blank" style="color: #da99ff;">See ALL view images on my GitHub.</a>
+      <h3>Front End Client</h3>
+        <p>Once the API was built, I started to build the interface in which users would see and interact with. It's a single-page, responsive application with routing, rich interactions, several interface views, and a polished user experience. All built with React.</p>
+      
+      <div style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 20px;">
+            <h4>Configuring React and Parcel</h4>
+              <p>The first step in building the front-end client of myFlix was setting up React. React is like a collection of building blocks for creating the app's user interface, which is the part users interact with. It allows assembling these blocks - such as buttons, menus, and information sections - into a user-friendly and interactive layout.
+                <br><br>Next, I configured Parcel, which acts as an efficient assistant in the development process. Parcel handles the organization and preparation of the app's code and resources. It simplifies tasks like combining code files and optimizing images, ensuring the app loads quickly and runs smoothly. This setup enables me to focus more on enhancing the user experience of myFlix.</p>
+          </div>
+          <div>
+            <a href="img/reactlogo.png" target="_blank">
+            <img src="img/reactlogo.png" alt="React Logo" width="400" height="170">
+            </a>
+          </div>
+        </div>
+      <!-- ROUGH VERSION OF MYFLIX-->
+      <br>
+      <br>
+        <div style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 5px;">
+              <a href="img/basicmyflix.png" target="_blank">
+            <img src="img/basicmyflix.png" alt="Rough draft of myflix" width="400" height="220">
+            </a>
+          </div>
+          <div>
+            <h4>Creating the Components</h4>
+              <p>In the next stage of building myFlix, I focused on creating React components, which are like individual building blocks of the app's interface. For example, I developed the 'MainView' component, which acts as the central page where users can browse movies, much like the main display area in a store.
+              <br><br> Additionally, I made the 'MovieCard' component, a smaller block that represents each movie. It's like a small product label, showing key details of each movie at a glance. These components helped shape the basic structure of myFlix, as seen in the screenshot.</p>
+          </div>
+        </div>  
+      <!-- Login and sign up view -->
+      <br>
+      <div style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 20px;">
+            <h4>Configuring React Forms</h4>
+              <p>After assembling the main components of MyFlix, I moved on to creating React forms for different user interactions. React forms are essentially digital forms on the app, similar to filling out a form on paper. They're used for entering and submitting information. I created forms for different purposes: a 'Login' form, a 'Sign Up' form, and a 'Profile' view form.</p>
+          </div>
+          <div>
+            <a href="img/mf-login.png" target="_blank">
+            <img src="img/mf-login.png" alt="myFlix Login Page" width="500" height="300">
+            </a>
+          </div>
+        </div>
+      <br>
+      <br>
+        <div style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 5px;">
+              <a href="img/mf-signup.png" target="_blank">
+            <img src="img/mf-signup.png" alt="myFlix Signup Page" width="500" height="300">
+            </a>
+          </div>
+          <div>
+              <p>The 'Login' form is where existing users enter their details to access their accounts, just like using a key to open a locked door. The 'Sign Up' form is used by new users to create an account, similar to filling out a registration form for a new club or service. Lastly, the 'Profile' view allows users to view and edit their personal information, akin to looking at and updating a personal ID card. These forms are essential for user interaction within MyFlix, allowing users to easily sign in, join, and manage their profiles.</p>
+          </div>
+        </div> 
+      <br>
+      <!--Bootstrap, responsive reac bs grid -->
+      <div style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 20px;">
+            <h4>React Bootstrap</h4>
+              <p>After setting up the basic functions and forms in MyFlix, the next step was to enhance the app's design and layout using something called React Bootstrap. React Bootstrap is a collection of ready-made design elements and tools that help in making the app not only look good but also work well on different devices, like phones, tablets, and computers.
+              <br><br>One of the key features I used from React Bootstrap is its 'responsive grid.' This grid system allows the layout of the app to adjust automatically based on the size of the screen it's being viewed on. For example, on the MyFlix main view page, where all the movies are listed, this grid system arranges the movie information neatly, whether you're looking at it on a small phone screen or a large computer monitor. It's like a bookshelf that magically resizes to fit in different rooms, always keeping the books (in this case, movie information) organized and easy to view. This step was crucial in ensuring that MyFlix looks great and is user-friendly on any device.</p>
+          </div>
+          <div>
+            <a href="img/grid.png" target="_blank">
+            <img src="img/grid.png" alt="myFlix Movie Grid" width="300" height="500">
+            </a>
+          </div>
+        </div>
+      <br>
+      <!-- Routing -->
+        <div style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 5px;">
+              <a href="img/router.png" target="_blank">
+            <img src="img/router.png" alt="myFlix Signup Page" width="500" height="300">
+            </a>
+          </div>
+          <div>
+            <h4>Routing</h4>
+              <p>After enhancing the design of MyFlix, I moved on to configuring the routing. This means setting up a system that guides users from one page to another within the app, similar to a navigation system in a building. It allows users to smoothly move between different sections, like the main movie list, individual movie details, and their profile, without any hassle. This step was vital to create a seamless and intuitive experience for users as they explore various parts of myFlix.</p>
+          </div>
+        </div> 
 
     <div class="screenshot-container">
-        <a href="img/mf-login.png" target="_blank">
-        <img src="img/mf-login.png" alt="Login View">
+        <a href="img/mf-onemovie.png" target="_blank">
+        <img src="img/mf-onemovie.png" alt="Login View">
         </a>
         <a href="img/mf-profile.png" target="_blank">
         <img src="img/mf-profile.png" alt="Main View">
         </a>
-        <a href="img/mf-signup.png" target="_blank">
-        <img src="img/mf-signup.png" alt="Profile View">
-        </a>
     </div>
     </div>
+    <br>
+       <a href="https://github.com/priya-km/myFlix-client#essential-views--features" target="_blank" style="color: #da99ff;">See ALL images of myFlix pages on my GitHub.</a>
     <hr>
+    <!-- CHALLENGES -->
    <div class="challenges">
     <h2>Challenges</h2>
-    <p>This is one of my favorite projects despite how challenging it was at times. Upon building the server side I ended up running into a minor issue due to using old Mongoose model syntax. That was quickly solved thanks to the help of my CareerFoundry Mentor, Paulo who walked me through using console.log statements in pieces of my code to eventually narrow down and correct the issue.</p>
-    <p>When it came to the client side, I had to take some more time to fully grasp how React works to get specific features to work properly and get the results that I wanted. For example, I took some time to finally get my favorite movies feature to work and for it to properly display on the users profile. I had to go back and make sure I was correctly calling my API and that each view was properly formatted to display correctly. I’m glad to say I am a lot more comfortable with React now.</p>
+      <p>This project was one of my favorites, even though it had its challenges. When building the server, I ran into a small problem because I used an older way of writing code with Mongoose. But, with help from my mentor, Paulo, I used console.log statements to figure out and fix the problem quickly.</p>
+      <p>On the client side, where I worked with React, it took me some time to get things just right. For instance, making the 'favorite movies' feature work correctly was a bit tricky. I had to double-check how I was connecting to my API and make sure everything was set up right to show up properly on the user profiles. This experience really helped me get better with React.</p>
+      <p>Next, I plan to improve the profile page. I want it to show information about the user. This will make the page more personal and informative, which means tweaking how the page looks and how it connects to the back-end to display user details better.</p>
+
    </div>
    <hr>
+   <!-- CREDITS -->
    <div class="credits">
     <h2>Credits</h2>
     <ul>
@@ -223,6 +384,7 @@
     <br>
    </div>
 </div>
+<!-- FOOTER -->
     <footer class="page-footer-cs">
         <div class="container">
             <p>Find me on</p>
