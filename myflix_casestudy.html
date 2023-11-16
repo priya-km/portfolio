@@ -76,6 +76,29 @@
         color: black;
         border-color: #da99ff;
         }
+
+  
+      /* Flexbox layout adjustment for smaller screens */
+      @media (max-width: 768px) {
+        .flex-container {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          font-size: 16px;
+        }
+      }
+
+      /* Button sizes for touch devices */
+      @media (max-width: 768px) {
+        .btn {
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+      }
+
     </style>
 </head>
 <body>
@@ -173,7 +196,7 @@
         <!-- BACK END -->
         <h3>Back End</h3>
         <p>The initial steps of this project involved creating a server-side RESTful API with URL endpoints and hosting movie, director, and genre information in a database.</p>
-        <div style="display: flex; align-items: flex-start;">
+        <div class="flex-container"style="display: flex; align-items: flex-start;">
             <a href="img/mern.png" target="_blank">
                 <img src="img/mern.png" alt="MERN stack logo" width="400" height="220" style="margin-right: 20px;">
             </a>
@@ -184,7 +207,7 @@
             </div>
         </div>
 
-        <div style="display: flex; align-items: flex-start;">
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
             <div style="margin-right: 20px;">
                 <h4>Defining API End Points</h4>
                 <p>At this stage, I started by outlining the specific functions my web application needed to perform, similar to a chef planning a menu. These functions, known as API endpoints, are like individual recipes, directing the app on how to respond to user requests. Then, I wrote the actual instructions in a file named 'index.js'. This file is like my guidebook, detailing how each function should be executed, ensuring the application reacts appropriately to user interactions.</p>
@@ -194,7 +217,7 @@
             </a>
         </div>
 
-        <div style="display: flex; align-items: flex-start;">
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
           <a href="img/mongodb.png" target="_blank">
             <img src="img/mongodb.png" alt="Mongodb logo" width="300" height="120" style="margin-right: 20px;">
           </a>
@@ -209,7 +232,7 @@
         </div>
         </div>
 
-        <div style="display: flex; align-items: flex-start;">
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
             <div style="margin-right: 20px;">
                 <h4>Defining the User and Movie models</h4>
                 <p>After choosing MongoDB for the database, the next step was to create 'models' for Users and Movies in the MyFlix app. Think of these models as blueprints or templates.<br><br>
@@ -225,7 +248,9 @@
             </div>
         </div>
 
-        <div style="display: flex; align-items: flex-start;">
+        <br> 
+        <br>
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
           <a href="img/mf_movies.png" target="_blank">
             <img src="img/mf_movies.png" alt="Postman get all movies testing" width="640" height="458" style="margin-right: 5px;">
           </a>
@@ -236,7 +261,7 @@
         </div>
         <br>
         <br>
-        <div style="display: flex; align-items: flex-start;">
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
             <div style="margin-right: 20px;">
               <p>The <b>auth.js</b> file is responsible for 'authentication,' which is like checking a guest's invitation at a party. It confirms users are who they say they are when they log in.<br><br>
               The <b>passport.js</b> file handles 'authorization,' which is like giving guests a pass to access different areas of the party based on their roles. This ensures that users only access information and features they are allowed to, maintaining privacy and security in the app. This combination of authentication and authorization is essential to protect both the users and the information within myFlix.</p>
@@ -247,8 +272,10 @@
             </a>
           </div>
         </div>
+        <br>
+        <br>
 
-        <div style="display: flex; align-items: flex-start;">
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
             <div style="margin-right: 5px;">
                 <a href="img/renderheroku.png" target="_blank">
                     <img src="img/renderheroku.png" alt="Graphic saying Render vs Heroku" width="600" height="150">
@@ -272,7 +299,7 @@
       <h3>Front End Client</h3>
         <p>Once the API was built, I started to build the interface in which users would see and interact with. It's a single-page, responsive application with routing, rich interactions, several interface views, and a polished user experience. All built with React.</p>
       
-      <div style="display: flex; align-items: flex-start;">
+      <div class="flex-container" style="display: flex; align-items: flex-start;">
           <div style="margin-right: 20px;">
             <h4>Configuring React and Parcel</h4>
               <p>The first step in building the front-end client of myFlix was setting up React. React is like a collection of building blocks for creating the app's user interface, which is the part users interact with. It allows assembling these blocks - such as buttons, menus, and information sections - into a user-friendly and interactive layout.
@@ -287,7 +314,7 @@
       <!-- ROUGH VERSION OF MYFLIX-->
       <br>
       <br>
-        <div style="display: flex; align-items: flex-start;">
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
           <div style="margin-right: 5px;">
               <a href="img/basicmyflix.png" target="_blank">
             <img src="img/basicmyflix.png" alt="Rough draft of myflix" width="400" height="220">
@@ -301,7 +328,7 @@
         </div>  
       <!-- Login and sign up view -->
       <br>
-      <div style="display: flex; align-items: flex-start;">
+      <div class="flex-container" style="display: flex; align-items: flex-start;">
           <div style="margin-right: 20px;">
             <h4>Configuring React Forms</h4>
               <p>After assembling the main components of MyFlix, I moved on to creating React forms for different user interactions. React forms are essentially digital forms on the app, similar to filling out a form on paper. They're used for entering and submitting information. I created forms for different purposes: a 'Login' form, a 'Sign Up' form, and a 'Profile' view form.</p>
@@ -314,7 +341,7 @@
         </div>
       <br>
       <br>
-        <div style="display: flex; align-items: flex-start;">
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
           <div style="margin-right: 5px;">
               <a href="img/mf-signup.png" target="_blank">
             <img src="img/mf-signup.png" alt="myFlix Signup Page" width="500" height="300">
@@ -326,7 +353,7 @@
         </div> 
       <br>
       <!--Bootstrap, responsive reac bs grid -->
-      <div style="display: flex; align-items: flex-start;">
+      <div class="flex-container" style="display: flex; align-items: flex-start;">
           <div style="margin-right: 20px;">
             <h4>React Bootstrap</h4>
               <p>After setting up the basic functions and forms in MyFlix, the next step was to enhance the app's design and layout using something called React Bootstrap. React Bootstrap is a collection of ready-made design elements and tools that help in making the app not only look good but also work well on different devices, like phones, tablets, and computers.
@@ -340,7 +367,7 @@
         </div>
       <br>
       <!-- Routing -->
-        <div style="display: flex; align-items: flex-start;">
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
           <div style="margin-right: 5px;">
               <a href="img/router.png" target="_blank">
             <img src="img/router.png" alt="myFlix Signup Page" width="500" height="300">
@@ -381,8 +408,24 @@
         <li>Tutor: Shrey Kumar</li>
         <li>Mentor: Paulo Andrade</li>
     </ul>
-    <br>
+
    </div>
+   <div style="display: flex; align-items: center; gap: 30px;">
+        <a href="https://myflixpkm.netlify.app/" class="btn btn-primary fade-in" target="_blank" color="white">Demo</a>
+        <br>
+        <br>
+        <div class="dropdown">
+            <button class="btn btn-primary fade-in dropdown-toggle" type="button" data-toggle="dropdown">
+              Code
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://github.com/priya-km/myflix-app" target="_blank">Server Side / API Code</a>
+              <a class="dropdown-item" href="https://github.com/priya-km/myFlix-client" target="_blank">Client Side / React Code</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    
 </div>
 <!-- FOOTER -->
     <footer class="page-footer-cs">
