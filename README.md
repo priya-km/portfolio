@@ -5,6 +5,7 @@
 <p> My name is Priya Maharban and I'm a web developer from New York. This my current portfolio consisting of the projects/apps that I have developed!</p>
 <h5>Future Portfolio Notes/Fixes</h5>
 - Re-doing the UI of the contact page, possibly adding a form<br>
+- Mobile responsive adjustments needed on the home page<br>
     
 ## Links 🔗
 [Live Portfolio](https://priya-km.github.io/portfolio "Live View")
