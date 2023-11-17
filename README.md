@@ -6,6 +6,7 @@
 <h5>Future Portfolio Notes/Fixes</h5>
 - Re-doing the UI of the contact page, possibly adding a form<br>
 - Mobile responsive adjustments needed on the home page<br>
+- Organizing code, documentation, and files.
     
 ## Links 🔗
 [Live Portfolio](https://priya-km.github.io/portfolio "Live View")
