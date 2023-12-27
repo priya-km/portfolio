@@ -128,7 +128,7 @@
     <div class="intro">
     <div class="text-content">
       <h1>Case Study</h1>
-      <h1>
+      <hr>
         <h2>Overview</h2>
         <p>Recipe Rack is a project built using the Python-based Django framework and it has been deployed on Heroku. RR allows its users to view a recipe wiki, upload their own recipes, and search recipes.</p>
 
@@ -137,25 +137,32 @@
 
         <h2>Objective</h2>
         <p>Using the Django web framework to develop a fully fledged web application with multiple users and an admin panel.</p>
+
+        <h2>Code & Demo</h2>
+        <p>*Please note that when trying out the demo hosted on Heroku, you may not see the images of recipes. This is due to Heroku's ephemeral filesystem, which resets every time the dyno restarts. As a result, uploaded images are not persisted across dyno restarts. I hope to implement an external storage solution in the near future.</p><br>
+        <h3>Live Demo Login:</h3>
+        <p>Username: demo<br>
+        Password: DemoUser</p>
+        <p>*Demo users are not authorized to access the Django admin panel and are for user demonstration purposes only.</p>
         <div style="display: flex; align-items: center; gap: 30px;">
-        <a href="https://myflixpkm.netlify.app/" class="btn btn-primary fade-in" target="_blank" color="white">Demo</a>
+        <a href="https://github.com/priya-km/recipe-app" class="btn btn-primary fade-in" target="_blank" color="white">Code</a>
         <br>
         <br>
         <div class="dropdown">
             <button class="btn btn-primary fade-in dropdown-toggle" type="button" data-toggle="dropdown">
-              Code
+              Demo
             </button>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="https://github.com/priya-km/myflix-app" target="_blank">Server Side / API Code</a>
-              <a class="dropdown-item" href="https://github.com/priya-km/myFlix-client" target="_blank">Client Side / React Code</a>
+              <a class="dropdown-item" href="https://github.com/priya-km/recipe-app?tab=readme-ov-file#video-demo" target="_blank">Video Demo</a>
+              <a class="dropdown-item" href="https://pkm-recipes-775734c521de.herokuapp.com/" target="_blank">Live Demo</a>
             </div>
           </div>
         </div>
     </div>
     
-    <div class="image-container">
-        <a href="img/mf-main.png" target="_blank">
-        <img src="img/mf-main.png" alt="myFlix main page" width="640" height="420">
+    <div class="image-container" style="margin-top: 150px;"> <!-- Need to fix top margin for mobile -->
+        <a href="img/case_studies/recipe_rack/rr_home.png" target="_blank">
+        <img src="img/case_studies/recipe_rack/rr_home.png" alt="RR main page" width="640" height="420">
         </a>
     </div>
     </div>
@@ -166,12 +173,12 @@
       <div class="col-sm-6">
         <h2>Technical Requirements</h2>
         <ul>
-          <li>Build a server-side and client-side for myFlix based on the MERN stack.</li>
-          <li>Build a RESTful API using Node.js, Express, and MongoDB.</li>
-          <li>Build a dynamic front-end using React.</li>
-          <li>Build a single-page application (SPA) that uses state routing to navigate between views and share URLs.</li>
-          <li>Use parcel as the build tool for the application.</li>
-          <li>Deploy the application to Heroku or Netlify.</li>
+          <li>Works on Python 3.6+ installations and Django version 3.</li>
+          <li>Handles exceptions or errors that arise during user input, for example, then displays user-friendly error messages.</li>
+          <li>Connects to a PostgreSQL database hosted locally on the same system (an SQLite database was needed during the development of the application).</li>
+          <li>Provides an easy-to-use interface, supported by simple forms of input and concise, easy-to-follow instructions. Menus containing features like login and logout must be presented neatly—with concise and easy-to-follow prompts.</li>
+          <li>Code with proper documentation and automated tests is uploaded on GitHub. A “requirements.txt” file is provided, containing the requisite modules for the project</li>
+          <li>Readme file is provided with instructions on downloading and running the app locally on any machine.</li>
         </ul>
       </div>
       <div class="col-sm-6">
@@ -179,13 +186,9 @@
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>JavaScript (ES6)</li>
-          <li>React</li>
-          <li>React-Bootstrap</li>
-          <li>Parcel</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>MongoDB</li>
+          <li>Python</li>
+          <li>Django</li>
+          <li>PostgreSQL</li>
           <li>Heroku</li>
         </ul>
       </div>
@@ -195,27 +198,31 @@
     <h2>Approach</h2>
    <div class="server">
         <br>
-        <!-- BACK END -->
-        <h3>Back End</h3>
-        <p>The initial steps of this project involved creating a server-side RESTful API with URL endpoints and hosting movie, director, and genre information in a database.</p>
+        <!-- PYTHON -->
+        <h3>Using Python For The First Time</h3>
+        <p>I started by creating a basic version of Recipe Rack using <b>Python</b>, which is a user-friendly programming language. It's like having a neat, organized kitchen where I can easily prepare my recipes. Python allowed me to write simple instructions for the computer to manage recipes.</p>
         <div class="flex-container"style="display: flex; align-items: flex-start;">
-            <a href="img/mern.png" target="_blank">
-                <img src="img/mern.png" alt="MERN stack logo" width="400" height="220" style="margin-right: 20px;">
+            <a href="img/case_studies/recipe_rack/rr_achv1.png" target="_blank">
+                <img src="img/case_studies/recipe_rack/rr_achv1.png" alt="Command Line Recipe Rack" width="400" height="220" style="margin-right: 20px;">
             </a>
             <div>
-                <h4>Installing MERN stack technologies</h4>
-                <p> The MERN stack is a powerful set of tools used in web development, each playing a unique role. MongoDB acts as the database, storing and organizing data flexibly. Express.js is a server-side framework that manages interactions between the front-end and the database. React.js is used for building dynamic and interactive user interfaces. Lastly, Node.js allows for server-side scripting, essentially enabling JavaScript to be used outside the browser. Together, these technologies provide a streamlined process for full-stack development, using JavaScript across both front-end and back-end development.</p>
-                <p>Since this project uses the MERN stack I started by getting my environment ready with installing Node.js and Express.</p>
+                <br>
+                <br>
+                <p>For storing these recipes, I used <b>MySQL</b>, similar to a pantry in my digital kitchen. It's a database that keeps all the recipe details neatly organized and easy to retrieve, just like how I'd store ingredients and recipe cards in a real pantry.</p>
+                <p>This initial phase involved making a command-line application. Think of it as using basic kitchen tools to get the job done. I could add, view, modify, and search for recipes, all through simple text commands. This step was crucial for me to understand the basics of working with Python and databases before moving on to more advanced stages of my project.</p>
             </div>
         </div>
+        <br>
 
         <div class="flex-container" style="display: flex; align-items: flex-start;">
             <div style="margin-right: 20px;">
-                <h4>Defining API End Points</h4>
-                <p>At this stage, I started by outlining the specific functions my web application needed to perform, similar to a chef planning a menu. These functions, known as API endpoints, are like individual recipes, directing the app on how to respond to user requests. Then, I wrote the actual instructions in a file named 'index.js'. This file is like my guidebook, detailing how each function should be executed, ensuring the application reacts appropriately to user interactions.</p>
+                <h4>Django Project Set Up</h4>
+                <p>After getting comfortable with Python, I introduced <b>Django</b> into the mix. Imagine Django as a state-of-the-art kitchen in a fancy restaurant, equipped with specialized tools and appliances. It's a powerful framework for web development, which means it provides me with ready-made components and structures to build my Recipe Rack website. Just like how a professional kitchen has everything a chef needs to create a variety of dishes efficiently, Django has built-in features that make it easier and faster for me to develop complex web applications.</p>
+                <p>Next, let's talk about the <b>virtual environment</b> I set up for this project. Think of a virtual environment like having a personal, mini kitchen inside the larger restaurant kitchen. This mini kitchen is exclusively for preparing a specific dish — in this case, my Recipe Rack project. In technical terms, a virtual environment in Python is a self-contained area on my computer where I can manage the specific tools and ingredients (in this case, software packages and dependencies) needed for my project.</p>
+                <p>By using this virtual environment, I make sure that my Recipe Rack project has its own space, separate from other projects that I am working on. This isolation prevents conflicts between different projects, just like avoiding cross-contamination in cooking. I activate this environment when I work on my project and deactivate it when I'm done, much like setting up and cleaning up my personal mini kitchen. This keeps my work organized and ensures that the right tools and ingredients are always at hand for each specific project.</p>
             </div>
-            <a href="img/endpoint.png" target="_blank">
-                <img src="img/endpoint.png" alt="documentation.html screenshot" width="400" height="220">
+            <a href="img/case_studies/recipe_rack/rr_ve.png" target="_blank">
+                <img src="img/case_studies/recipe_rack/rr_ve.png" alt="Activating virtual environment" width="640" height="200">
             </a>
         </div>
 
@@ -224,7 +231,7 @@
             <img src="img/mongodb.png" alt="Mongodb logo" width="300" height="120" style="margin-right: 20px;">
           </a>
          <div> 
-          <h4>Setting up the database with MongoDB</h4>
+          <h4>Running Migrations - ALL CONTENT BELOW IS STILL UNDER CONSTRUCTION</h4>
           <p>The decision to use MongoDB was driven by two main qualities of MongoDB: its high performance and scalability. <br>
             <br>
             <b>High performance</b> means that when users search for information about movies, the app can quickly find and display this data. Imagine it like a super-efficient librarian who can find a book in a huge library in seconds. <br>
@@ -407,8 +414,7 @@
     <h2>Credits</h2>
     <ul>
         <li>My Role: Lead Developer</li>
-        <li>Tutor: Shrey Kumar</li>
-        <li>Mentor: Paulo Andrade</li>
+        <li>Mentor: Victor (Vicki) Nomwesigwa</li>
     </ul>
 
    </div>

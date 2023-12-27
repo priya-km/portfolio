@@ -692,6 +692,7 @@ text-align: center;
 
 .text-and-button {
   margin: 10px;
+  color:black;
 }
 
 @media screen and (max-width: 768px) {
