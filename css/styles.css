@@ -240,6 +240,7 @@ text-align: center;
 
 /* makes website better for smaller screen sizes, should always be at the end of css */ 
 
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;

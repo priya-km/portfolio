@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/cs_styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
             body {
@@ -259,7 +260,7 @@
           <a href="img/case_studies/recipe_rack/rr_models.png" target="_blank">
             <img src="img/case_studies/recipe_rack/rr_models.png" alt="Models.py screenshot" width="640" height="100" style="margin-right: 5px;">
           </a>
-         <div> 
+         <div class="desktop-margin-l"> 
            <h4>Creating the Recipe Model</h4>
             <p>After establishing the database schema for Recipe Rack, which detailed the attributes of the Recipe model, and creating the recipe app, my next step was to bring this model to life within the Recipe app. The Recipe app in Django is like a specialized section in my project, dedicated entirely to handling everything about recipes. Within this app, I defined the Recipe model in the models.py file. Think of the Recipe model as a specific template for each recipe, outlining essential details like the recipe name, ingredients, and cooking time. This model is a crucial part of the app, dictating how recipe information is structured and stored in the database. To integrate this model into the database, I used the 'makemigrations' and 'migrate' commands. 'makemigrations' prepared a detailed plan for incorporating the Recipe model into the database, while 'migrate' executed these plans, updating the database to work seamlessly with this new model. This was a vital step in transforming my initial database design into a dynamic, functional part of Recipe Rack.</p>
         </div>
@@ -275,7 +276,7 @@
             </div>
           <br>
           <br>
-            <div>
+            <div class="desktop-margin-l">
               <h4>Running Tests</h4>
                 
               <p>Testing in web development is like doing a thorough quality check in a factory before a product is shipped out. It's about making sure that every feature works exactly as intended and that there are no defects. For Recipe Rack, after I set up the Recipe model — our template for what a recipe should include — I wrote tests to verify each part of the model functioned correctly.
@@ -319,7 +320,7 @@
             <img src="img/case_studies/recipe_rack/rr_views.png" alt="Screenshot of the views.py code" width="500" height="220">
             </a>
           </div>
-          <div>
+          <div class="desktop-margin-l">
             <h4>Creating the Different Views</h4>
               <p>After filling the Recipe Rack with some delicious recipes using the admin panel, it was time to set up the ways users would interact with the site. I crafted different pages for the website which are called 'views', such as a welcome page that greets users, a page that displays a snapshot and title of each recipe, and a detailed page for when a user wants to see a recipe's full instructions and ingredients. Designing each web page was a fun part for me as I love doing front end designs.
               <br><br>Creating these pages started with writing down the roles each page would play in the recipe app's 'views.py' file, which is like a director outlining scenes in a play. Then, I designed the actual look of each page, like painting a set for each scene, by creating HTML templates. Once the designs were ready, I connected them with their roles in the 'views.py' file, like assigning the painted sets to their respective scenes, ensuring visitors to Recipe Rack would have a visually appealing and smooth experience as they browse through the recipes.</p>
@@ -338,7 +339,7 @@
       <!-- Include old vs newer welcome page -->
       <br>
       <br>
-            <div class="flex-container" style="display: flex; align-items: flex-start;">
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
           <div style="margin-right: 20px;">
             <h4>URL Mapping</h4>
               <p>After setting up the pages for Recipe Rack and connecting them to their designs, the next task was to guide users to these pages. Just like street signs help you find the right destination, I needed to create clear directions for the website. This was done by assigning a specific address, known as a URL, to each page.
@@ -355,12 +356,17 @@
       <br>
       <div class="flex-container" style="display: flex; align-items: flex-start;">
           <div style="margin-right: 20px;">
-            <h4>Login and Logout Features - ALL CONTENT BELOW IS UNDER CONSTRUCTION - To be finished Wednesday January 17th EOD</h4> <!-- and views -->
-              <p>After assembling the main components of myFlix, I moved on to creating React forms for different user interactions. React forms are essentially digital forms on the app, similar to filling out a form on paper. They're used for entering and submitting information. I created forms for different purposes: a 'Login' form, a 'Sign Up' form, and a 'Profile' view form.</p>
+            <h4>Login and Logout Features</h4>
+            <br>
+            <br>
+              <p>The next step for Recipe Rack was to create a way for users to sign in and out, just like entering or leaving their own kitchen. I set up a 'login' feature that asks for a username and password, and a 'logout' feature that lets users exit securely. I did skip a direct registration option. This was to avoid the extra complexity and security concerns that come with handling new user sign-ups, such as password management and data protection, keeping the project more straightforward and secure for the time being.
+                <br>
+                <br>
+              </p>
           </div>
           <div>
-            <a href="img/mf-login.png" target="_blank">
-            <img src="img/mf-login.png" alt="myFlix Login Page" width="500" height="300">
+            <a href="img/case_studies/recipe_rack/rr_login.png" target="_blank">
+            <img src="img/case_studies/recipe_rack/rr_login.png" alt="Recipe Rack Login Page" width="500" height="300">
             </a>
           </div>
         </div>
@@ -368,12 +374,15 @@
       <br>
         <div class="flex-container" style="display: flex; align-items: flex-start;">
           <div style="margin-right: 5px;">
-              <a href="img/mf-signup.png" target="_blank">
-            <img src="img/mf-signup.png" alt="myFlix Signup Page" width="500" height="300">
+              <a href="img/case_studies/recipe_rack/rr_logout.png" target="_blank">
+            <img src="img/case_studies/recipe_rack/rr_logout.png" alt="Recipe Rack Logout page" width="500" height="300">
             </a>
           </div>
           <div>
-              <p>The 'Login' form is where existing users enter their details to access their accounts, just like using a key to open a locked door. The 'Sign Up' form is used by new users to create an account, similar to filling out a registration form for a new club or service. Lastly, the 'Profile' view allows users to view and edit their personal information, akin to looking at and updating a personal ID card. These forms are essential for user interaction within myFlix, allowing users to easily sign in, join, and manage their profiles.</p>
+            <br>
+            <br>
+            <br>
+              <p class="desktop-margin-l">To make these features easy to use, I added a login button on the home page that takes users to the login page, and once they're signed in, a logout button appears in the navigation bar. This means users can easily access their own space on Recipe Rack to save their favorite recipes or add new ones, and then leave with just a click when they're done. Mapping the URLs was like putting up clear signs pointing to these features, ensuring users always know how to sign in or out.</p>
           </div>
         </div> 
       <br>
@@ -381,49 +390,84 @@
       <div class="flex-container" style="display: flex; align-items: flex-start;">
           <div style="margin-right: 20px;">
             <h4>View Protection and Authentication</h4>
-              <p>After setting up the basic functions and forms in myFlix, the next step was to enhance the app's design and layout using something called React Bootstrap. React Bootstrap is a collection of ready-made design elements and tools that help in making the app not only look good but also work well on different devices, like phones, tablets, and computers.
-              <br><br>One of the key features I used from React Bootstrap is its 'responsive grid.' This grid system allows the layout of the app to adjust automatically based on the size of the screen it's being viewed on. For example, on the myFlix main view page, where all the movies are listed, this grid system arranges the movie information neatly, whether you're looking at it on a small phone screen or a large computer monitor. It's like a bookshelf that magically resizes to fit in different rooms, always keeping the books (in this case, movie information) organized and easy to view. This step was crucial in ensuring that myFlix looks great and is user-friendly on any device.</p>
-          </div>
-          <div>
-            <a href="img/grid.png" target="_blank">
-            <img src="img/grid.png" alt="myFlix Movie Grid" width="300" height="500">
-            </a>
+              <p>In Recipe Rack, I made sure that only those who are part of the 'kitchen crew' (logged-in users) can see certain pages. The home page, along with the login and logout pages, are like the entrance to a restaurant — open to everyone. However, for more exclusive areas, like where the recipes are stored, I put a digital 'key' on them.
+              <br><br>By adding a special code called LoginRequiredMixin to the pages with our recipes, I made them accessible only to users with the key — in other words, those who are logged in. It's like having a security system that ensures only members can enter certain areas of the site, keeping the recipes secure and personalized. This way, Recipe Rack maintains privacy and a sense of exclusivity for its community. If someone tried to access the url for the rlist of recipes without being logged in they would immediately be redirected to the log in page.</p>
           </div>
         </div>
       <br>
       <!-- Data analysis and visualization of charts-->
         <div class="flex-container" style="display: flex; align-items: flex-start;">
-          <div style="margin-right: 5px;">
-              <a href="img/router.png" target="_blank">
-            <img src="img/router.png" alt="myFlix Signup Page" width="500" height="300">
-            </a>
-          </div>
           <div>
             <h4>Adding a Search Feature and Charts</h4>
-              <p>After enhancing the design of myFlix, I moved on to configuring the routing. This means setting up a system that guides users from one page to another within the app, similar to a navigation system in a building. It allows users to smoothly move between different sections, like the main movie list, individual movie details, and their profile, without any hassle. This step was vital to create a seamless and intuitive experience for users as they explore various parts of myFlix.</p>
+              <p>
+                I enhanced Recipe Rack by adding a feature that lets users search for recipes based on how hard they are to make, like sorting a cookbook by beginner, intermediate, or advanced dishes. Once a user picks a difficulty level, they can also choose to see the results in different visual forms: a pie chart, a bar chart, or a line chart. It's like choosing between seeing a photo, a graph, or a list — each one shows the same information in a unique way.
+                <br>
+                <br>
+                Creating this feature involved a few technical steps: setting up a form for users to enter their search, finding the matching recipes, and then using tools to turn those results into charts. While the charts might not have been as pretty as the rest of the site, they were a great way for me to learn and apply data analysis and visualization directly within the project. It gave users a fun and interactive way to explore recipes and see the distribution of different difficulty levels at a glance.</p>
           </div>
         </div> 
 
         <!-- Need to add the left / right picture layout for the further steps here -->
 
-    <div class="screenshot-container">
-        <a href="img/mf-onemovie.png" target="_blank">
-        <img src="img/mf-onemovie.png" alt="Login View">
-        </a>
-        <a href="img/mf-profile.png" target="_blank">
-        <img src="img/mf-profile.png" alt="Main View">
-        </a>
-    </div>
+        <div class="screenshot-container" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+          <a href="img/case_studies/recipe_rack/rr_bar.png" target="_blank" style="flex: 1; margin: 10px;">
+              <img src="img/case_studies/recipe_rack/rr_bar.png" alt="Bar Chart" style="width: 100%; height: auto;">
+          </a>
+          <a href="img/case_studies/recipe_rack/rr_line.png" target="_blank" style="flex: 1; margin: 10px;">
+              <img src="img/case_studies/recipe_rack/rr_line.png" alt="Line Chart" style="width: 100%; height: auto;">
+          </a>
+          <a href="img/case_studies/recipe_rack/rr_pie.png" target="_blank" style="flex: 1; margin: 10px;">
+              <img src="img/case_studies/recipe_rack/rr_pie.png" alt="Pie Chart" style="width: 100%; height: auto;">
+          </a>
+      </div>
+      <br>
+      <br>
+
+      <div class="flex-container" style="display: flex; align-items: flex-start;">
+        <div style="margin-right: 20px;">
+          <h4>Final Steps - Hosting on Heroku</h4>
+            <p>
+              In the final phase of the Recipe Rack project, my focus shifted to refining the website's design. I enhanced the visual aspects by applying CSS, making the interface more user-friendly and visually appealing. This step was about ensuring that the website not only worked well but also looked great. Additionally, I expanded the website's content by adding many more recipes and enabling a feature for users to contribute their own. Following this was additional testing before I movwed on to hosting the project live.
+
+            <br><br>To make Recipe Rack accessible to everyone, I hosted the website on Heroku, a platform that allows web projects to be available on the internet. This meant that Recipe Rack was not just a local project anymore; it was now live and could be visited by anyone online. You can explore the full functionality and appearance of Recipe Rack by watching the demo video or by logging in to the website using the provided demo account credentials, both mentioned below.</p>
+              <br>
+              <p>*Please note that when trying out the demo hosted on Heroku, you may not see the images of recipes. This is due to Heroku's ephemeral filesystem, which resets every time the dyno restarts. As a result, uploaded images are not persisted across dyno restarts. I hope to implement an external storage solution in the near future.</p><br>
+              <h3>Live Demo Login:</h3>
+              <p>Username: demo<br>
+              Password: DemoUser</p>
+              <p>*Demo users are not authorized to access the Django admin panel and are for user demonstration purposes only.</p>
+              <div style="display: flex; align-items: center; gap: 30px;">
+              <a href="https://github.com/priya-km/recipe-app" class="btn btn-primary fade-in" target="_blank" color="white">Code</a>
+              <br>
+              <br>
+              <div class="dropdown">
+                  <button class="btn btn-primary fade-in dropdown-toggle" type="button" data-toggle="dropdown">
+                    Demo
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://github.com/priya-km/recipe-app?tab=readme-ov-file#video-demo" target="_blank">Video Demo</a>
+                    <a class="dropdown-item" href="https://pkm-recipes-775734c521de.herokuapp.com/" target="_blank">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <br>
+        <br>
+        <div>
+          <a href="img/case_studies/recipe_rack/herokulogo.png" target="_blank">
+          <img src="img/case_studies/recipe_rack/herokulogo.png" alt="Heroku Logo" width="400" height="100">
+          </a>
+        </div>
+      </div>
+      
     </div>
     <br>
-       <a href="https://github.com/priya-km/myFlix-client#essential-views--features" target="_blank" style="color: #da99ff;">See ALL images of myFlix pages on my GitHub.</a>
     <hr>
     <!-- CHALLENGES -->
    <div class="challenges">
     <h2>Challenges</h2>
-      <p>This project was one of my favorites, even though it had its challenges. When building the server, I ran into a small problem because I used an older way of writing code with Mongoose. But, with help from my mentor, Paulo, I used console.log statements to figure out and fix the problem quickly.</p>
-      <p>On the client side, where I worked with React, it took me some time to get things just right. For instance, making the 'favorite movies' feature work correctly was a bit tricky. I had to double-check how I was connecting to my API and make sure everything was set up right to show up properly on the user profiles. This experience really helped me get better with React.</p>
-      <p>Next, I plan to improve the profile page. I want it to show information about the user. This will make the page more personal and informative, which means tweaking how the page looks and how it connects to the back-end to display user details better.</p>
+      <p>This project was my first time working with Python and Django, and it was quite a learning experience. I found their rules and structure pretty straightforward to understand. However, I ran into some challenges because some of the learning materials were a bit out of date, which is common in the fast-moving world of technology. This sometimes made my code not work right, but I managed to fix these issues by looking up solutions on websites like Stack Overflow, where there's a big community of web developers ready to help.</p>
+      <p>One thing I'm looking to improve in the future is how the website handles pictures, especially for the recipes. I plan to use a tool like Firebase for this, so that the pictures show up properly on the demo site. I'm excited to work on this in the future and make the website even better.</p>
 
    </div>
    <hr>
@@ -436,21 +480,6 @@
     </ul>
 
    </div>
-   <div style="display: flex; align-items: center; gap: 30px;">
-        <a href="https://myflixpkm.netlify.app/" class="btn btn-primary fade-in" target="_blank" color="white">Demo</a>
-        <br>
-        <br>
-        <div class="dropdown">
-            <button class="btn btn-primary fade-in dropdown-toggle" type="button" data-toggle="dropdown">
-              Code
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="https://github.com/priya-km/myflix-app" target="_blank">Server Side / API Code</a>
-              <a class="dropdown-item" href="https://github.com/priya-km/myFlix-client" target="_blank">Client Side / React Code</a>
-            </div>
-          </div>
-        </div>
-    </div>
     
 </div>
 <!-- FOOTER -->
