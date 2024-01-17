@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/cs_styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
             body {
@@ -259,7 +260,7 @@
           <a href="img/case_studies/recipe_rack/rr_models.png" target="_blank">
             <img src="img/case_studies/recipe_rack/rr_models.png" alt="Models.py screenshot" width="640" height="100" style="margin-right: 5px;">
           </a>
-         <div> 
+         <div class="desktop-margin-l"> 
            <h4>Creating the Recipe Model</h4>
             <p>After establishing the database schema for Recipe Rack, which detailed the attributes of the Recipe model, and creating the recipe app, my next step was to bring this model to life within the Recipe app. The Recipe app in Django is like a specialized section in my project, dedicated entirely to handling everything about recipes. Within this app, I defined the Recipe model in the models.py file. Think of the Recipe model as a specific template for each recipe, outlining essential details like the recipe name, ingredients, and cooking time. This model is a crucial part of the app, dictating how recipe information is structured and stored in the database. To integrate this model into the database, I used the 'makemigrations' and 'migrate' commands. 'makemigrations' prepared a detailed plan for incorporating the Recipe model into the database, while 'migrate' executed these plans, updating the database to work seamlessly with this new model. This was a vital step in transforming my initial database design into a dynamic, functional part of Recipe Rack.</p>
         </div>
@@ -275,7 +276,7 @@
             </div>
           <br>
           <br>
-            <div>
+            <div class="desktop-margin-l">
               <h4>Running Tests</h4>
                 
               <p>Testing in web development is like doing a thorough quality check in a factory before a product is shipped out. It's about making sure that every feature works exactly as intended and that there are no defects. For Recipe Rack, after I set up the Recipe model — our template for what a recipe should include — I wrote tests to verify each part of the model functioned correctly.
@@ -319,7 +320,7 @@
             <img src="img/case_studies/recipe_rack/rr_views.png" alt="Screenshot of the views.py code" width="500" height="220">
             </a>
           </div>
-          <div>
+          <div class="desktop-margin-l">
             <h4>Creating the Different Views</h4>
               <p>After filling the Recipe Rack with some delicious recipes using the admin panel, it was time to set up the ways users would interact with the site. I crafted different pages for the website which are called 'views', such as a welcome page that greets users, a page that displays a snapshot and title of each recipe, and a detailed page for when a user wants to see a recipe's full instructions and ingredients. Designing each web page was a fun part for me as I love doing front end designs.
               <br><br>Creating these pages started with writing down the roles each page would play in the recipe app's 'views.py' file, which is like a director outlining scenes in a play. Then, I designed the actual look of each page, like painting a set for each scene, by creating HTML templates. Once the designs were ready, I connected them with their roles in the 'views.py' file, like assigning the painted sets to their respective scenes, ensuring visitors to Recipe Rack would have a visually appealing and smooth experience as they browse through the recipes.</p>
@@ -381,7 +382,7 @@
             <br>
             <br>
             <br>
-              <p>To make these features easy to use, I added a login button on the home page that takes users to the login page, and once they're signed in, a logout button appears in the navigation bar. This means users can easily access their own space on Recipe Rack to save their favorite recipes or add new ones, and then leave with just a click when they're done. Mapping the URLs was like putting up clear signs pointing to these features, ensuring users always know how to sign in or out.</p>
+              <p class="desktop-margin-l">To make these features easy to use, I added a login button on the home page that takes users to the login page, and once they're signed in, a logout button appears in the navigation bar. This means users can easily access their own space on Recipe Rack to save their favorite recipes or add new ones, and then leave with just a click when they're done. Mapping the URLs was like putting up clear signs pointing to these features, ensuring users always know how to sign in or out.</p>
           </div>
         </div> 
       <br>
