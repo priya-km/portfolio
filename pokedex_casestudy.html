@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex App Case Study - Priya-KM</title>
+  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/cs_styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+            body {
+        font-family: 'Oswald', sans-serif; 
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff; /* Change the background color here */
+        }
+
+        .section {
+        padding-top: 0;
+    }
+
+        header {
+        background-color: #ffffff;
+        color: #000000;
+        text-align: center;
+        padding: 20px 0;
+        }
+
+        nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #da99ff;
+        color: #fff;
+        padding: 10px 0;
+        }
+
+        link {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: 0.3s;
+        }
+
+        nav a:hover {
+        background-color: #fac7fe;
+        }
+
+        /* Custom CSS styles */
+        .navbar-nav .nav-link {
+        color: white;
+        }
+
+        .nav {
+        color: white;
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+        color: rgb(255, 255, 255);
+        }
+
+        a.link, a {
+        color:#fff;
+        }
+
+        .btn-primary:active,
+        .btn-primary.active {
+        background-color: #da99ff;
+        color: black;
+        border-color: #da99ff;
+        }
+
+  
+      /* Flexbox layout adjustment for smaller screens */
+      @media (max-width: 768px) {
+        .flex-container {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          font-size: 16px;
+        }
+      }
+
+      /* Button sizes for touch devices */
+      @media (max-width: 768px) {
+        .btn {
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+      }
+
+    </style>
+</head>
+<body>
+  <header>
+   <!--  TOP HEADER  -->
+    <h1><img src="img/priyakaajal.png" width="32" height="32">PRIYA-KM</h1>
+  </header>
+  <!-- NAV -->
+<nav class="navbar navbar-fixed">
+  <a href="index.html#home" class="link">HOME</a>
+  <span>|</span>
+  <a href="index.html#about" class="link">ABOUT</a>
+  <span>|</span>
+  <a href="index.html#projects" class="link">PROJECTS</a>
+  <span>|</span>
+  <a href="index.html#contact" class="link">CONTACT</a>
+</nav>
+
+  <br>
+    <!-- MAIN CONTENT -->
+<div class="container" style="margin-top: 80px;"> 
+  <div style="text-align: center;">
+    <!-- Need to create a pokedex logo text here -->
+  <img src="img/rr_logo.png" alt="Recipe Rack Logo" width="410" height="50">
+  </div>
+  <hr>
+ <!-- INTRO CONTENT -->
+    <div class="intro">
+    <div class="text-content">
+      <h1>Case Study</h1>
+      <hr>
+        <h2>Overview</h2>
+        <p>Pokedex is a Pokemon Wiki app where users can search for and view details of specific Pokemon in the Kanto region. This Pokedex App is built using HTML, CSS, and Javascript. It uses an external Pokeapi for its Pokemon data.</p>
+
+        <h2>Purpose</h2>
+        <p>This Pokedex App was built as a personal project for my full stack web development course at CareerFoundry. This app was the first Javascript project of the course and it taught me hands on, many of the Javascript basics in the process.</p>
+
+        <h2>Objective</h2>
+        <p> To build a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.</p>
+
+        <h2>Code & Demo</h2>
+        <div style="display: flex; align-items: center; gap: 30px;">
+        <a href="https://github.com/priya-km/pokedex-app" class="btn btn-primary fade-in" target="_blank" color="white">Code</a>
+        <br>
+        <br>
+        <div style="display: flex; align-items: center; gap: 30px;">
+            <a href="https://priya-km.github.io/pokedex-app/" class="btn btn-primary fade-in" target="_blank" color="white">Demo</a>
+        </div>
+        </div>
+    </div>
+    
+    <div class="image-container" style="margin-top: 150px;"> <!-- Need to fix top margin for mobile -->
+        <a href="img/case_studies/recipe_rack/rr_home.png" target="_blank">
+        <img src="img/case_studies/recipe_rack/rr_home.png" alt="RR main page" width="640" height="420">
+        </a>
+    </div>
+    </div>
+  <!--BUTTONS BELOW LOGO, CODE, DEMO, ETC -->
+  <!-- TECH STACK -->
+  <hr>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Technical Requirements</h2>
+        <ul>
+          <li>Must load data from an external API</li> <!-- Add in paranthesis or something, the link to pokeapi -->
+          <li>Must display a list of items loaded from that API after the page is loaded.</li>
+          <li>Enables the viewing of more details for a given list item (like a Pokémon) on demand, such as when clicking on a list item.</li>
+          <li>Must have CSS styling.</li>
+          <li>The JavaScript code must be formatted according to ESLint rules. (Via Prettier or manually) </li>
+          <li>Must include a search feature</li>
+          <li>Must not throw any errors when being used.</li>
+          <li>Must be deployed to a publicly accessible platform like GitHub Pages.</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <h2>Technical Stack</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript</li>
+          <li>GitHub Pages</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <!-- APPROACH -->
+    <h2>Approach</h2>
+   <div class="server">
+        <br>
+        <!-- PYTHON -->
+        <h3>Using Python For The First Time</h3>
+        <p>I started by creating a basic version of Recipe Rack using <b>Python</b>, which is a user-friendly programming language. It's like having a neat, organized kitchen where I can easily prepare my recipes. Python allowed me to write simple instructions for the computer to manage recipes.</p>
+        <div class="flex-container"style="display: flex; align-items: flex-start;">
+            <a href="img/case_studies/recipe_rack/rr_achv1.png" target="_blank">
+                <img src="img/case_studies/recipe_rack/rr_achv1.png" alt="Command Line Recipe Rack" width="400" height="220" style="margin-right: 20px;">
+            </a>
+            <div>
+                <br>
+                <br>
+                <p>For storing these recipes, I used <b>MySQL</b>, similar to a pantry in my digital kitchen. It's a database that keeps all the recipe details neatly organized and easy to retrieve, just like how I'd store ingredients and recipe cards in a real pantry.</p>
+                <p>This initial phase involved making a command-line application. Think of it as using basic kitchen tools to get the job done. I could add, view, modify, and search for recipes, all through simple text commands. This step was crucial for me to understand the basics of working with Python and databases before moving on to more advanced stages of my project.</p>
+            </div>
+        </div>
+        <br>
+
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
+            <div style="margin-right: 20px;">
+                <h4>Django Project Set Up</h4>
+                <p>After getting comfortable with Python, I introduced <b>Django</b> into the mix. Imagine Django as a state-of-the-art kitchen in a fancy restaurant, equipped with specialized tools and appliances. It's a powerful framework for web development, which means it provides me with ready-made components and structures to build my Recipe Rack website. Just like how a professional kitchen has everything a chef needs to create a variety of dishes efficiently, Django has built-in features that make it easier and faster for me to develop complex web applications.</p>
+                <p>Next, let's talk about the <b>virtual environment</b> I set up for this project. Think of a virtual environment like having a personal, mini kitchen inside the larger restaurant kitchen. This mini kitchen is exclusively for preparing a specific dish — in this case, my Recipe Rack project. In technical terms, a virtual environment in Python is a self-contained area on my computer where I can manage the specific tools and ingredients (in this case, software packages and dependencies) needed for my project.</p>
+                <p>By using this virtual environment, I make sure that my Recipe Rack project has its own space, separate from other projects that I am working on. This isolation prevents conflicts between different projects, just like avoiding cross-contamination in cooking. I activate this environment when I work on my project and deactivate it when I'm done, much like setting up and cleaning up my personal mini kitchen. This keeps my work organized and ensures that the right tools and ingredients are always at hand for each specific project.</p>
+            </div>
+            <a href="img/case_studies/recipe_rack/rr_ve.png" target="_blank">
+                <img src="img/case_studies/recipe_rack/rr_ve.png" alt="Activating virtual environment" width="640" height="200">
+            </a>
+        </div>
+        <br> 
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
+          <a href="img/case_studies/recipe_rack/rr_schema.jpg" target="_blank">
+            <img src="img/case_studies/recipe_rack/rr_schema.jpg" alt="Making Migrations" width="640" height="200" style="margin-right: 20px;">
+          </a>
+         <div> 
+          <h4>Drawing a Database Schema</h4>
+              <p> After setting up our virtual kitchen for Reicpe Rack I sketched out a detailed map of where everything should go...this is our 'database schema'. Which included the recipe and user apps. For our digital kitchen, this meant planning out where all the recipe information and user details would be kept in the computer.
+              <br> <br> Next, I crafted two main workstations in our digital kitchen: one for recipes and one for users, which in the tech world, we call 'apps'. These are like specialized counters where all the magic happens - one for preparing the dishes (recipes) and the other for managing the cooks (users).</p>
+        </div>
+        </div>
+
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
+            <div style="margin-right: 20px;">
+                <h4>Creating the Apps</h4>
+                  <p>After setting up our virtual kitchen for Recipe Rack, I began shaping its essential sections. Running migrations was like making sure all kitchen appliances were installed and functioning - it's about turning our kitchen design into a practical cooking area.<br> 
+                  <br>
+                  Next came testing the server and seeing, which is similar to doing a trial run in the kitchen, ensuring everything from the stove to the pantry worked smoothly. Finally, creating a superuser account which is the admin. Its as if you were to appoint a head chef, someone with full access and control over the kitchen. <br>
+            <br>
+            </div>
+            <div>
+              <br>
+              <a href="img/case_studies/recipe_rack/rr_migrations.png" target="_blank">
+                <img src="img/case_studies/recipe_rack/rr_migrations.png" alt="Rough database schema" width="640" height="200">
+              </a>
+            </div>
+        </div>
+
+        <br> 
+        <br>
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
+          <a href="img/case_studies/recipe_rack/rr_models.png" target="_blank">
+            <img src="img/case_studies/recipe_rack/rr_models.png" alt="Models.py screenshot" width="640" height="100" style="margin-right: 5px;">
+          </a>
+         <div class="desktop-margin-l"> 
+           <h4>Creating the Recipe Model</h4>
+            <p>After establishing the database schema for Recipe Rack, which detailed the attributes of the Recipe model, and creating the recipe app, my next step was to bring this model to life within the Recipe app. The Recipe app in Django is like a specialized section in my project, dedicated entirely to handling everything about recipes. Within this app, I defined the Recipe model in the models.py file. Think of the Recipe model as a specific template for each recipe, outlining essential details like the recipe name, ingredients, and cooking time. This model is a crucial part of the app, dictating how recipe information is structured and stored in the database. To integrate this model into the database, I used the 'makemigrations' and 'migrate' commands. 'makemigrations' prepared a detailed plan for incorporating the Recipe model into the database, while 'migrate' executed these plans, updating the database to work seamlessly with this new model. This was a vital step in transforming my initial database design into a dynamic, functional part of Recipe Rack.</p>
+        </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
+            <div style="margin-right: 5px;">
+                <a href="img/case_studies/recipe_rack/rr_tests.png" target="_blank">
+                    <img src="img/case_studies/recipe_rack/rr_tests.png" alt="Running tests screenshot" width="600" height="150">
+                </a>
+            </div>
+          <br>
+          <br>
+            <div class="desktop-margin-l">
+              <h4>Running Tests</h4>
+                
+              <p>Testing in web development is like doing a thorough quality check in a factory before a product is shipped out. It's about making sure that every feature works exactly as intended and that there are no defects. For Recipe Rack, after I set up the Recipe model — our template for what a recipe should include — I wrote tests to verify each part of the model functioned correctly.
+
+              <br> These tests, coded in a tests.py file, are like a series of checks on a recipe card to ensure that every detail, such as the cooking time and recipe name, adheres to specific rules, such as cooking time being only in numbers or the recipe name not exceeding 120 characters. Running these tests is essential as it helps catch any issues early on. It's a bit like proofreading a menu before it's printed. This ensures that users have a smooth experience when they use Recipe Rack, without running into errors or malfunctions that could have been prevented.</p>
+            <br>
+        </div>
+
+   </div>
+    <div class="flex-container" style="display: flex; align-items: center; justify-content: center;">
+      <div>
+        <a href="img/case_studies/recipe_rack/rr_nametest.png" target="_blank">
+          <img src="img/case_studies/recipe_rack/rr_nametest.png" alt="tests.py file screenshot" width="600" height="150">
+        </a>
+      </div>
+    </div> 
+   <br>
+   <br>
+   <br>
+
+    <div class="client">
+      
+      <div class="flex-container" style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 20px;">
+            <h4>Adding Recipes via Django Admin Panel</h4>
+              <p> Once the framework for Recipe Rack was in place and the tests confirmed everything was working as it should, the next practical step was to start populating it with actual recipes. Let's change the comparisons up now. Think of the Django admin panel as the control room of a television show. Here, I can direct what content goes live. By starting the server — like turning on the power in the control room — I gained access to the admin panel, a powerful interface where I can add, edit, and manage content.
+
+              <br><br> I began by logging into the superuser account that I created earlier on and I entered five recipes into the database. This process is much like filling in a form with details like the recipe title, ingredients, and steps, then saving it. Each saved recipe is like an episode ready to be broadcasted; it's stored in the database and can be retrieved and displayed to any visitor of the Recipe Rack site.</p>
+          </div>
+          <div>
+            <a href="img/case_studies/recipe_rack/rr_admin.png" target="_blank">
+            <img src="img/case_studies/recipe_rack/rr_admin.png" alt="Django Admin Panel" width="700" height="350">
+            </a>
+          </div>
+        </div>
+      <br>
+      <br>
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 5px;">
+              <a href="img/case_studies/recipe_rack/rr_views.png" target="_blank">
+            <img src="img/case_studies/recipe_rack/rr_views.png" alt="Screenshot of the views.py code" width="500" height="220">
+            </a>
+          </div>
+          <div class="desktop-margin-l">
+            <h4>Creating the Different Views</h4>
+              <p>After filling the Recipe Rack with some delicious recipes using the admin panel, it was time to set up the ways users would interact with the site. I crafted different pages for the website which are called 'views', such as a welcome page that greets users, a page that displays a snapshot and title of each recipe, and a detailed page for when a user wants to see a recipe's full instructions and ingredients. Designing each web page was a fun part for me as I love doing front end designs.
+              <br><br>Creating these pages started with writing down the roles each page would play in the recipe app's 'views.py' file, which is like a director outlining scenes in a play. Then, I designed the actual look of each page, like painting a set for each scene, by creating HTML templates. Once the designs were ready, I connected them with their roles in the 'views.py' file, like assigning the painted sets to their respective scenes, ensuring visitors to Recipe Rack would have a visually appealing and smooth experience as they browse through the recipes.</p>
+              <br> <br>
+          </div>
+        </div>  
+        <br>
+          <div class="screenshot-container">
+                <a href="img/case_studies/recipe_rack/rr_main.png" target="_blank">
+                <img src="img/case_studies/recipe_rack/rr_main.png" alt="Recipe list page">
+                </a>
+                <a href="img/case_studies/recipe_rack/rr_details.png" target="_blank">
+                <img src="img/case_studies/recipe_rack/rr_details.png" alt="Recipe details page">
+                </a>
+            </div>
+      <!-- Include old vs newer welcome page -->
+      <br>
+      <br>
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 20px;">
+            <h4>URL Mapping</h4>
+              <p>After setting up the pages for Recipe Rack and connecting them to their designs, the next task was to guide users to these pages. Just like street signs help you find the right destination, I needed to create clear directions for the website. This was done by assigning a specific address, known as a URL, to each page.
+
+              <br><br>I did this by writing down these addresses in a 'urls.py' file within the recipe app, which acts like a signpost within a smaller neighborhood. Then, I also updated the 'urls.py' file in the main project folder, which is like the central map at the town hall showing all the neighborhoods and their signposts. This ensured that when users visit Recipe Rack, they can easily navigate to the welcome page, browse through the list of recipes, or dive into the details of a particular recipe by simply following the URLs, just like following an address to a friend's house. After this was done I ran the server again and tested out my new pages via their urls.</p>
+          </div>
+          <div>
+            <a href="img/case_studies/recipe_rack/rr_urls.png" target="_blank">
+            <img src="img/case_studies/recipe_rack/rr_urls.png" alt="Django Admin Panel" width="500" height="220">
+            </a>
+          </div>
+        </div>
+      <br>
+      <br>
+      <div class="flex-container" style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 20px;">
+            <h4>Login and Logout Features</h4>
+            <br>
+            <br>
+              <p>The next step for Recipe Rack was to create a way for users to sign in and out, just like entering or leaving their own kitchen. I set up a 'login' feature that asks for a username and password, and a 'logout' feature that lets users exit securely. I did skip a direct registration option. This was to avoid the extra complexity and security concerns that come with handling new user sign-ups, such as password management and data protection, keeping the project more straightforward and secure for the time being.
+                <br>
+                <br>
+              </p>
+          </div>
+          <div>
+            <a href="img/case_studies/recipe_rack/rr_login.png" target="_blank">
+            <img src="img/case_studies/recipe_rack/rr_login.png" alt="Recipe Rack Login Page" width="500" height="300">
+            </a>
+          </div>
+        </div>
+      <br>
+      <br>
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 5px;">
+              <a href="img/case_studies/recipe_rack/rr_logout.png" target="_blank">
+            <img src="img/case_studies/recipe_rack/rr_logout.png" alt="Recipe Rack Logout page" width="500" height="300">
+            </a>
+          </div>
+          <div>
+            <br>
+            <br>
+            <br>
+              <p class="desktop-margin-l">To make these features easy to use, I added a login button on the home page that takes users to the login page, and once they're signed in, a logout button appears in the navigation bar. This means users can easily access their own space on Recipe Rack to save their favorite recipes or add new ones, and then leave with just a click when they're done. Mapping the URLs was like putting up clear signs pointing to these features, ensuring users always know how to sign in or out.</p>
+          </div>
+        </div> 
+      <br>
+
+      <div class="flex-container" style="display: flex; align-items: flex-start;">
+          <div style="margin-right: 20px;">
+            <h4>View Protection and Authentication</h4>
+              <p>In Recipe Rack, I made sure that only those who are part of the 'kitchen crew' (logged-in users) can see certain pages. The home page, along with the login and logout pages, are like the entrance to a restaurant — open to everyone. However, for more exclusive areas, like where the recipes are stored, I put a digital 'key' on them.
+              <br><br>By adding a special code called LoginRequiredMixin to the pages with our recipes, I made them accessible only to users with the key — in other words, those who are logged in. It's like having a security system that ensures only members can enter certain areas of the site, keeping the recipes secure and personalized. This way, Recipe Rack maintains privacy and a sense of exclusivity for its community. If someone tried to access the url for the rlist of recipes without being logged in they would immediately be redirected to the log in page.</p>
+          </div>
+        </div>
+      <br>
+      <!-- Data analysis and visualization of charts-->
+        <div class="flex-container" style="display: flex; align-items: flex-start;">
+          <div>
+            <h4>Adding a Search Feature and Charts</h4>
+              <p>
+                I enhanced Recipe Rack by adding a feature that lets users search for recipes based on how hard they are to make, like sorting a cookbook by beginner, intermediate, or advanced dishes. Once a user picks a difficulty level, they can also choose to see the results in different visual forms: a pie chart, a bar chart, or a line chart. It's like choosing between seeing a photo, a graph, or a list — each one shows the same information in a unique way.
+                <br>
+                <br>
+                Creating this feature involved a few technical steps: setting up a form for users to enter their search, finding the matching recipes, and then using tools to turn those results into charts. While the charts might not have been as pretty as the rest of the site, they were a great way for me to learn and apply data analysis and visualization directly within the project. It gave users a fun and interactive way to explore recipes and see the distribution of different difficulty levels at a glance.</p>
+          </div>
+        </div> 
+
+        <!-- Need to add the left / right picture layout for the further steps here -->
+
+        <div class="screenshot-container" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+          <a href="img/case_studies/recipe_rack/rr_bar.png" target="_blank" style="flex: 1; margin: 10px;">
+              <img src="img/case_studies/recipe_rack/rr_bar.png" alt="Bar Chart" style="width: 100%; height: auto;">
+          </a>
+          <a href="img/case_studies/recipe_rack/rr_line.png" target="_blank" style="flex: 1; margin: 10px;">
+              <img src="img/case_studies/recipe_rack/rr_line.png" alt="Line Chart" style="width: 100%; height: auto;">
+          </a>
+          <a href="img/case_studies/recipe_rack/rr_pie.png" target="_blank" style="flex: 1; margin: 10px;">
+              <img src="img/case_studies/recipe_rack/rr_pie.png" alt="Pie Chart" style="width: 100%; height: auto;">
+          </a>
+      </div>
+      <br>
+      <br>
+
+      <div class="flex-container" style="display: flex; align-items: flex-start;">
+        <div style="margin-right: 20px;">
+          <h4>Final Steps - Hosting on Heroku</h4>
+            <p>
+              In the final phase of the Recipe Rack project, my focus shifted to refining the website's design. I enhanced the visual aspects by applying CSS, making the interface more user-friendly and visually appealing. This step was about ensuring that the website not only worked well but also looked great. Additionally, I expanded the website's content by adding many more recipes and enabling a feature for users to contribute their own. Following this was additional testing before I movwed on to hosting the project live.
+
+            <br><br>To make Recipe Rack accessible to everyone, I hosted the website on Heroku, a platform that allows web projects to be available on the internet. This meant that Recipe Rack was not just a local project anymore; it was now live and could be visited by anyone online. You can explore the full functionality and appearance of Recipe Rack by watching the demo video or by logging in to the website using the provided demo account credentials, both mentioned below.</p>
+              <br>
+              <p>*Please note that when trying out the demo hosted on Heroku, you may not see the images of recipes. This is due to Heroku's ephemeral filesystem, which resets every time the dyno restarts. As a result, uploaded images are not persisted across dyno restarts. I hope to implement an external storage solution in the near future.</p><br>
+              <h3>Live Demo Login:</h3>
+              <p>Username: demo<br>
+              Password: DemoUser</p>
+              <p>*Demo users are not authorized to access the Django admin panel and are for user demonstration purposes only.</p>
+              <div style="display: flex; align-items: center; gap: 30px;">
+              <a href="https://github.com/priya-km/recipe-app" class="btn btn-primary fade-in" target="_blank" color="white">Code</a>
+              <br>
+              <br>
+              <div class="dropdown">
+                  <button class="btn btn-primary fade-in dropdown-toggle" type="button" data-toggle="dropdown">
+                    Demo
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://github.com/priya-km/recipe-app?tab=readme-ov-file#video-demo" target="_blank">Video Demo</a>
+                    <a class="dropdown-item" href="https://pkm-recipes-775734c521de.herokuapp.com/" target="_blank">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <br>
+        <br>
+        <div>
+          <a href="img/case_studies/recipe_rack/herokulogo.png" target="_blank">
+          <img src="img/case_studies/recipe_rack/herokulogo.png" alt="Heroku Logo" width="400" height="100">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+    <br>
+    <hr>
+    <!-- CHALLENGES -->
+   <div class="challenges">
+    <h2>Challenges</h2>
+      <p>This project was my first time working with Python and Django, and it was quite a learning experience. I found their rules and structure pretty straightforward to understand. However, I ran into some challenges because some of the learning materials were a bit out of date, which is common in the fast-moving world of technology. This sometimes made my code not work right, but I managed to fix these issues by looking up solutions on websites like Stack Overflow, where there's a big community of web developers ready to help.</p>
+      <p>One thing I'm looking to improve in the future is how the website handles pictures, especially for the recipes. I plan to use a tool like Firebase for this, so that the pictures show up properly on the demo site. I'm excited to work on this in the future and make the website even better.</p>
+
+   </div>
+   <hr>
+   <!-- CREDITS -->
+   <div class="credits">
+    <h2>Credits</h2>
+    <ul>
+        <li>My Role: Lead Developer</li>
+        <li>Tutor: Shrey Kumar</li>
+        <li>Mentor: Paulo Andrade</li>
+    </ul>
+
+   </div>
+    
+</div>
+<!-- FOOTER -->
+    <footer class="page-footer-cs">
+        <div class="container">
+            <p>Find me on</p>
+            <!-- GitHub Logo -->
+            <a href="https://github.com/priya-km" target="_blank">
+                <img src="img/github_icon.svg" alt="Github">
+            </a>
+            <!-- Email Logo -->
+            <a href="mailto:priyamaharban@gmail.com" class="email-link" target="_blank">
+              <img src="img/email_icon.svg" width="32" height="32" alt="Email Me">
+              </a>
+            <!-- LinkedIn Logo -->
+            <a href="https://www.linkedin.com/in/priyamaharban" target="_blank">
+                <img src="img/linkedin_icon.svg" width="30" height="30" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+<!--DROP DOWN BUTTON-->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var dropdowns = document.querySelectorAll(".dropdown-toggle");
+    
+    dropdowns.forEach(function (dropdown) {
+      dropdown.addEventListener("click", function () {
+        var dropdownMenu = this.nextElementSibling;
+        if (dropdownMenu.style.display === "block") {
+          dropdownMenu.style.display = "none";
+        } else {
+          dropdownMenu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
