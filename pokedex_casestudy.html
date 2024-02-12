@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RecipeRack Case Study - Priya-KM</title>
+  <title>Pokedex App Case Study - Priya-KM</title>
   <link rel="shortcut icon" href="./img/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -122,6 +122,7 @@
     <!-- MAIN CONTENT -->
 <div class="container" style="margin-top: 80px;"> 
   <div style="text-align: center;">
+    <!-- Need to create a pokedex logo text here -->
   <img src="img/rr_logo.png" alt="Recipe Rack Logo" width="410" height="50">
   </div>
   <hr>
@@ -131,21 +132,22 @@
       <h1>Case Study</h1>
       <hr>
         <h2>Overview</h2>
-        <p>Recipe Rack is a project built using the Python-based Django framework and it has been deployed on Heroku. RR allows its users to view a recipe wiki, upload their own recipes, and search recipes.</p>
+        <p>Pokedex is a Pokemon Wiki app where users can search for and view details of specific Pokemon in the Kanto region. This Pokedex App is built using HTML, CSS, and Javascript. It uses an external Pokeapi for its Pokemon data.</p>
 
         <h2>Purpose</h2>
-        <p>Recipe Rack was built as a personal project for my web development course at CareerFoundry to master my skills of full-stack web development with languages such as Python and its frameworks such as Django.</p>
+        <p>This Pokedex App was built as a personal project for my full stack web development course at CareerFoundry. This app was the first Javascript project of the course and it taught me hands on, many of the Javascript basics in the process.</p>
 
         <h2>Objective</h2>
-        <p>Using the Django web framework to develop a fully fledged web application with multiple users and an admin panel.</p>
+        <p> To build a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.</p>
 
         <h2>Code & Demo</h2>
-        <p>*Due to Herokus discontinued support of free dynos, there is now only a video demo of this app.</p>
         <div style="display: flex; align-items: center; gap: 30px;">
-        <a href="https://github.com/priya-km/recipe-app" class="btn btn-primary fade-in" target="_blank" color="white">Code</a>
+        <a href="https://github.com/priya-km/pokedex-app" class="btn btn-primary fade-in" target="_blank" color="white">Code</a>
         <br>
         <br>
-        <a href="https://user-images.githubusercontent.com/118628757/280438247-a02a3c36-f3f5-44fc-99f7-67afd713fa99.mp4" class="btn btn-primary fade-in" target="_blank" color="white">Video Demo</a>
+        <div style="display: flex; align-items: center; gap: 30px;">
+            <a href="https://priya-km.github.io/pokedex-app/" class="btn btn-primary fade-in" target="_blank" color="white">Demo</a>
+        </div>
         </div>
     </div>
     
@@ -162,12 +164,14 @@
       <div class="col-sm-6">
         <h2>Technical Requirements</h2>
         <ul>
-          <li>Works on Python 3.6+ installations and Django version 3.</li>
-          <li>Handles exceptions or errors that arise during user input, for example, then displays user-friendly error messages.</li>
-          <li>Connects to a PostgreSQL database hosted locally on the same system (an SQLite database was needed during the development of the application).</li>
-          <li>Provides an easy-to-use interface, supported by simple forms of input and concise, easy-to-follow instructions. Menus containing features like login and logout must be presented neatly—with concise and easy-to-follow prompts.</li>
-          <li>Code with proper documentation and automated tests is uploaded on GitHub. A “requirements.txt” file is provided, containing the requisite modules for the project</li>
-          <li>Readme file is provided with instructions on downloading and running the app locally on any machine.</li>
+          <li>Must load data from an external API</li> <!-- Add in paranthesis or something, the link to pokeapi -->
+          <li>Must display a list of items loaded from that API after the page is loaded.</li>
+          <li>Enables the viewing of more details for a given list item (like a Pokémon) on demand, such as when clicking on a list item.</li>
+          <li>Must have CSS styling.</li>
+          <li>The JavaScript code must be formatted according to ESLint rules. (Via Prettier or manually) </li>
+          <li>Must include a search feature</li>
+          <li>Must not throw any errors when being used.</li>
+          <li>Must be deployed to a publicly accessible platform like GitHub Pages.</li>
         </ul>
       </div>
       <div class="col-sm-6">
@@ -175,10 +179,8 @@
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>Python</li>
-          <li>Django</li>
-          <li>PostgreSQL</li>
-          <li>Heroku</li>
+          <li>Javascript</li>
+          <li>GitHub Pages</li>
         </ul>
       </div>
     </div>
@@ -464,7 +466,8 @@
     <h2>Credits</h2>
     <ul>
         <li>My Role: Lead Developer</li>
-        <li>Mentor: Victor (Vicki) Nomwesigwa</li>
+        <li>Tutor: Shrey Kumar</li>
+        <li>Mentor: Paulo Andrade</li>
     </ul>
 
    </div>
